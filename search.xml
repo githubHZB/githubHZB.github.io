@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>185cm小伙与C语言的那些事——C语言开端</title>
+    <url>/posts/6959/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success flat"><p>第一次写Hexo博客请多包涵</p>
+</div>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在开始正文之前，我先进行一个简短的自我介绍吧。<br>大家好，我是一名来自西南地区的二本大一学生，一名对科技世界充满热情的学习者和探索者。我在大学所学习的专业是计算机科学与技术专业，长期致力于提升自身技能并拓宽知识领域。最近，我决定踏入编程的世界，希望通过掌握这门强大的语言工具，将创新思维转化为现实应用。</p>
+<h2 id="一、初始编程"><a href="#一、初始编程" class="headerlink" title="一、初始编程"></a>一、初始编程</h2><p>梦想开始的地方</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img-blog.csdnimg.cn/direct/55ae377f813e47f389b0a3547d3df7c4.png" alt="雷军2023年演讲图片"></p>
+<p>视频链接 <a href="https://www.bilibili.com/video/BV1pu4y1q7GG/?spm_id_from=333.337.search-card.all.click&amp;vd_source=8500d2a91fad56072d5015ba1a1cd7cf">雷军2023年演讲</a></p>
+<p>那是一个不眠之夜，我在床上躺着，我便打开了B站，因为我每天在睡觉之前都会打开B站看我关注的UP主的视频。我刚点进去就看到了这个视频，我就很期待这个视频的演讲内容是啥？因为我很喜欢雷军，所以我决定将这个视频看完再睡。</p>
+<p>我记得这个演讲的大致内容是：雷军讲述了他在武大的往事，并将自己的大学的任务分成了三个目标来完成，并且讲述了自己创业的经历。</p>
+<ol>
+<li><p>第一个目标</p>
+<p>-读大学的经验：</p>
+<p>99%的问题都是有答案的，接大多数问题都是决绝的，多去问。</p>
+<p>-如何自学：</p>
+<p>知识点是网状的，不是线性的。不懂得可以跳读，有些读者读者就懂了。</p>
+<p>-搞定选修：</p>
+<p>教室做老师面前，只要老师提问 会不会就举手，加深老师的印象。</p>
+</li>
+<li><p>第二个目标（做一个优秀的程序猿）</p>
+<p>-找老师、课堂来回走动帮助同学、进老师办公室</p>
+</li>
+<li><p>第三个目标（在学报上发论文）</p>
+<p>-请教老师，之前的行为，老师对你们的印象深刻，都很愿意帮助你。</p>
+<p>雷军幸运的是真的愿意把梦想当回事儿，尽自己的所能，去把他完成。幸运的是，他学会了拆解目标。</p>
+<p>梦想的力量是强大的：他把很多不可能的事，变成可能。</p>
+</li>
+</ol>
+<p>在演讲中有一句让我印象深刻的话：</p>
+<blockquote>
+<p>“人因梦想而伟大，又因坚持梦想而成长，只有脚踏实地的成长，才能让自己内心充实，眼里有光，时时刻刻充满力量”</p>
+</blockquote>
+<p>你好，C语言，我是185小伙。<br><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;你好, 185cm小伙。\n&quot;</span>);</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;欢迎来到C语言\n&quot;</span>);</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>经过一个学期的学习，185cm小伙开启了大一下学期，学校也是开设了C语言课程。为了提升自身技能并拓宽知识领域，也是逐渐对C语言产生了浓厚的兴趣。</p>
+<h2 id="二、如何学习编程"><a href="#二、如何学习编程" class="headerlink" title="二、如何学习编程"></a>二、如何学习编程</h2><p>作为一名大一新生小白，我清楚地认识自己有多么渺小。因此在C语言的学习中，首先会打好C语言语法基础；其次，多去Github,Gitee上观看编程大佬是如何写代码的；接着，尝试着模仿大佬写的代码，便要思考代码中运用到的知识点，将自己不认识的知识点及记录下来；最后，勤加练习。</p>
+<p>1.循序渐进的学习保证自己每天都有知识的摄入。</p>
+<p>2.维护github,gitee，记录自己学习写代码的过程，让每一行代码都有迹可循。</p>
+<h2 id="三、如何安排编程时间"><a href="#三、如何安排编程时间" class="headerlink" title="三、如何安排编程时间"></a>三、如何安排编程时间</h2><p>1.循序渐进的学习保证自己每天都有知识的摄入。</p>
+<p>2.每天花2小时回顾C语言相关知识点，并且每天编写一个模仿大佬写的代码，思考代码中运用到的知识点，将自己不认识的知识点及记录下来。</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>欢迎各位读者百忙之中能够抽空阅读此文章。<br>小伙大一，有些迷茫未来，希望各位大佬能够提供宝贵建议。您的建议就是我未来可能的就业方向。再次由衷感谢！！！</p>
+]]></content>
+      <categories>
+        <category>C语言程序设计</category>
+      </categories>
+      <tags>
+        <tag>第一篇博客-未来愿景</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C语言程序设计实战小项目-电脑关机程序</title>
+    <url>/posts/26289/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success flat"><p>第一次发布C语言代码小项目请多包涵</p>
+</div>
+<h1 id="代码实现过程"><a href="#代码实现过程" class="headerlink" title="代码实现过程"></a>代码实现过程</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 关闭编译器特定的安全警告</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 程序设计目的：实现一个简单的关机程序互动功能</span></span><br><span class="line"><span class="comment">// 功能描述：</span></span><br><span class="line"><span class="comment">// 1. 程序启动后，默认设置电脑在60秒后自动关机。</span></span><br><span class="line"><span class="comment">// 2. 用户可以通过输入&quot;你是猪&quot;来取消此次关机操作。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 注意事项：</span></span><br><span class="line"><span class="comment">// - 字符串比较需使用`strcmp`函数而非`==`操作符。</span></span><br><span class="line"><span class="comment">// - `system`函数允许程序执行系统命令，需包含`stdlib.h`头文件以支持该功能。</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span>    <span class="comment">// 标准输入输出函数库</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span>   <span class="comment">// 提供了多种与系统相关的函数，如system()</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span>   <span class="comment">// 字符串处理函数库，用于strcmp()</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> input[<span class="number">20</span>] = &#123;<span class="number">0</span>&#125;; <span class="comment">// 初始化一个字符数组用于存储用户输入</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用system函数设置电脑在60秒后关机</span></span><br><span class="line">    system(<span class="string">&quot;shutdown -s -t 60&quot;</span>);</span><br><span class="line"></span><br><span class="line">start_prompt: <span class="comment">// 标签用于跳转回输入提示处</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请注意，你的电脑将在1分钟内关机。\n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;如果输入：我是猪，则取消关机。\n&quot;</span>); <span class="comment">// 提示用户输入信息以取消关机</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, input); <span class="comment">// 读取用户输入到input数组</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用strcmp比较用户输入是否为&quot;我是猪&quot;</span></span><br><span class="line">    <span class="comment">// 如果返回值为0，表示两个字符串相等，即用户输入正确取消语句</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(<span class="string">&quot;我是猪&quot;</span>, input) == <span class="number">0</span>) &#123;</span><br><span class="line">        system(<span class="string">&quot;shutdown -a&quot;</span>); <span class="comment">// 执行系统命令取消之前的关机指令</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">goto</span> start_prompt; <span class="comment">// 输入不正确，跳回开始继续提示用户</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">// 程序正常结束</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="解决关机的方法"><a href="#解决关机的方法" class="headerlink" title="解决关机的方法"></a>解决关机的方法</h1><ol>
+<li>程序运行起来的时候，就开始倒计时60秒关机</li>
+<li>但是如果你能输入：你是猪，就取消关机</li>
+</ol>
+<h1 id="大家可以到我的GitHub主页中下载-exe可执行程序尝试一下-关机程序下载地址"><a href="#大家可以到我的GitHub主页中下载-exe可执行程序尝试一下-关机程序下载地址" class="headerlink" title="大家可以到我的GitHub主页中下载.exe可执行程序尝试一下: 关机程序下载地址"></a>大家可以到我的GitHub主页中下载.exe可执行程序尝试一下: <a href="https://github.com/githubHZB/PengGe-C-Language-Training-Camp-PhaseV/blob/main/test_4_25-%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E4%B9%8B%E5%85%B3%E6%9C%BA%E7%A8%8B%E5%BA%8F/x64/Release/%E4%BD%A0%E6%87%82%E7%9A%84.exe">关机程序下载地址</a></h1>]]></content>
+      <categories>
+        <category>C语言程序设计</category>
+      </categories>
+      <tags>
+        <tag>C语言小项目</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2023-2024-2-程序设计基础-期中测验</title>
     <url>/posts/35783/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="tip warning faa-horizontal animated"><p>《程序设计基础》期中测验</p>
@@ -158,73 +225,6 @@
       </tags>
   </entry>
   <entry>
-    <title>185cm小伙与C语言的那些事——C语言开端</title>
-    <url>/posts/6959/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success flat"><p>第一次写Hexo博客请多包涵</p>
-</div>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在开始正文之前，我先进行一个简短的自我介绍吧。<br>大家好，我是一名来自西南地区的二本大一学生，一名对科技世界充满热情的学习者和探索者。我在大学所学习的专业是计算机科学与技术专业，长期致力于提升自身技能并拓宽知识领域。最近，我决定踏入编程的世界，希望通过掌握这门强大的语言工具，将创新思维转化为现实应用。</p>
-<h2 id="一、初始编程"><a href="#一、初始编程" class="headerlink" title="一、初始编程"></a>一、初始编程</h2><p>梦想开始的地方</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img-blog.csdnimg.cn/direct/55ae377f813e47f389b0a3547d3df7c4.png" alt="雷军2023年演讲图片"></p>
-<p>视频链接 <a href="https://www.bilibili.com/video/BV1pu4y1q7GG/?spm_id_from=333.337.search-card.all.click&amp;vd_source=8500d2a91fad56072d5015ba1a1cd7cf">雷军2023年演讲</a></p>
-<p>那是一个不眠之夜，我在床上躺着，我便打开了B站，因为我每天在睡觉之前都会打开B站看我关注的UP主的视频。我刚点进去就看到了这个视频，我就很期待这个视频的演讲内容是啥？因为我很喜欢雷军，所以我决定将这个视频看完再睡。</p>
-<p>我记得这个演讲的大致内容是：雷军讲述了他在武大的往事，并将自己的大学的任务分成了三个目标来完成，并且讲述了自己创业的经历。</p>
-<ol>
-<li><p>第一个目标</p>
-<p>-读大学的经验：</p>
-<p>99%的问题都是有答案的，接大多数问题都是决绝的，多去问。</p>
-<p>-如何自学：</p>
-<p>知识点是网状的，不是线性的。不懂得可以跳读，有些读者读者就懂了。</p>
-<p>-搞定选修：</p>
-<p>教室做老师面前，只要老师提问 会不会就举手，加深老师的印象。</p>
-</li>
-<li><p>第二个目标（做一个优秀的程序猿）</p>
-<p>-找老师、课堂来回走动帮助同学、进老师办公室</p>
-</li>
-<li><p>第三个目标（在学报上发论文）</p>
-<p>-请教老师，之前的行为，老师对你们的印象深刻，都很愿意帮助你。</p>
-<p>雷军幸运的是真的愿意把梦想当回事儿，尽自己的所能，去把他完成。幸运的是，他学会了拆解目标。</p>
-<p>梦想的力量是强大的：他把很多不可能的事，变成可能。</p>
-</li>
-</ol>
-<p>在演讲中有一句让我印象深刻的话：</p>
-<blockquote>
-<p>“人因梦想而伟大，又因坚持梦想而成长，只有脚踏实地的成长，才能让自己内心充实，眼里有光，时时刻刻充满力量”</p>
-</blockquote>
-<p>你好，C语言，我是185小伙。<br><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS </span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;你好, 185cm小伙。\n&quot;</span>);</span><br><span class="line">   <span class="built_in">printf</span>(<span class="string">&quot;欢迎来到C语言\n&quot;</span>);</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>经过一个学期的学习，185cm小伙开启了大一下学期，学校也是开设了C语言课程。为了提升自身技能并拓宽知识领域，也是逐渐对C语言产生了浓厚的兴趣。</p>
-<h2 id="二、如何学习编程"><a href="#二、如何学习编程" class="headerlink" title="二、如何学习编程"></a>二、如何学习编程</h2><p>作为一名大一新生小白，我清楚地认识自己有多么渺小。因此在C语言的学习中，首先会打好C语言语法基础；其次，多去Github,Gitee上观看编程大佬是如何写代码的；接着，尝试着模仿大佬写的代码，便要思考代码中运用到的知识点，将自己不认识的知识点及记录下来；最后，勤加练习。</p>
-<p>1.循序渐进的学习保证自己每天都有知识的摄入。</p>
-<p>2.维护github,gitee，记录自己学习写代码的过程，让每一行代码都有迹可循。</p>
-<h2 id="三、如何安排编程时间"><a href="#三、如何安排编程时间" class="headerlink" title="三、如何安排编程时间"></a>三、如何安排编程时间</h2><p>1.循序渐进的学习保证自己每天都有知识的摄入。</p>
-<p>2.每天花2小时回顾C语言相关知识点，并且每天编写一个模仿大佬写的代码，思考代码中运用到的知识点，将自己不认识的知识点及记录下来。</p>
-<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>欢迎各位读者百忙之中能够抽空阅读此文章。<br>小伙大一，有些迷茫未来，希望各位大佬能够提供宝贵建议。您的建议就是我未来可能的就业方向。再次由衷感谢！！！</p>
-]]></content>
-      <categories>
-        <category>C语言程序设计</category>
-      </categories>
-      <tags>
-        <tag>第一篇博客-未来愿景</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C语言程序设计实战小项目-电脑关机程序</title>
-    <url>/posts/26289/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success flat"><p>第一次发布C语言代码小项目请多包涵</p>
-</div>
-<h1 id="代码实现过程"><a href="#代码实现过程" class="headerlink" title="代码实现过程"></a>代码实现过程</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 关闭编译器特定的安全警告</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 程序设计目的：实现一个简单的关机程序互动功能</span></span><br><span class="line"><span class="comment">// 功能描述：</span></span><br><span class="line"><span class="comment">// 1. 程序启动后，默认设置电脑在60秒后自动关机。</span></span><br><span class="line"><span class="comment">// 2. 用户可以通过输入&quot;你是猪&quot;来取消此次关机操作。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 注意事项：</span></span><br><span class="line"><span class="comment">// - 字符串比较需使用`strcmp`函数而非`==`操作符。</span></span><br><span class="line"><span class="comment">// - `system`函数允许程序执行系统命令，需包含`stdlib.h`头文件以支持该功能。</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span>    <span class="comment">// 标准输入输出函数库</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span>   <span class="comment">// 提供了多种与系统相关的函数，如system()</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span>   <span class="comment">// 字符串处理函数库，用于strcmp()</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> input[<span class="number">20</span>] = &#123;<span class="number">0</span>&#125;; <span class="comment">// 初始化一个字符数组用于存储用户输入</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用system函数设置电脑在60秒后关机</span></span><br><span class="line">    system(<span class="string">&quot;shutdown -s -t 60&quot;</span>);</span><br><span class="line"></span><br><span class="line">start_prompt: <span class="comment">// 标签用于跳转回输入提示处</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请注意，你的电脑将在1分钟内关机。\n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;如果输入：我是猪，则取消关机。\n&quot;</span>); <span class="comment">// 提示用户输入信息以取消关机</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, input); <span class="comment">// 读取用户输入到input数组</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用strcmp比较用户输入是否为&quot;我是猪&quot;</span></span><br><span class="line">    <span class="comment">// 如果返回值为0，表示两个字符串相等，即用户输入正确取消语句</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(<span class="string">&quot;我是猪&quot;</span>, input) == <span class="number">0</span>) &#123;</span><br><span class="line">        system(<span class="string">&quot;shutdown -a&quot;</span>); <span class="comment">// 执行系统命令取消之前的关机指令</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">goto</span> start_prompt; <span class="comment">// 输入不正确，跳回开始继续提示用户</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">// 程序正常结束</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="解决关机的方法"><a href="#解决关机的方法" class="headerlink" title="解决关机的方法"></a>解决关机的方法</h1><ol>
-<li>程序运行起来的时候，就开始倒计时60秒关机</li>
-<li>但是如果你能输入：你是猪，就取消关机</li>
-</ol>
-<h1 id="大家可以到我的GitHub主页中下载-exe可执行程序尝试一下-关机程序下载地址"><a href="#大家可以到我的GitHub主页中下载-exe可执行程序尝试一下-关机程序下载地址" class="headerlink" title="大家可以到我的GitHub主页中下载.exe可执行程序尝试一下: 关机程序下载地址"></a>大家可以到我的GitHub主页中下载.exe可执行程序尝试一下: <a href="https://github.com/githubHZB/PengGe-C-Language-Training-Camp-PhaseV/blob/main/test_4_25-%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E4%B9%8B%E5%85%B3%E6%9C%BA%E7%A8%8B%E5%BA%8F/x64/Release/%E4%BD%A0%E6%87%82%E7%9A%84.exe">关机程序下载地址</a></h1>]]></content>
-      <categories>
-        <category>C语言程序设计</category>
-      </categories>
-      <tags>
-        <tag>C语言小项目</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 基本语法</title>
     <url>/posts/45085/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="poem"><div class="poem-title">出师表</div><div class="poem-author">诸葛亮</div><p>先帝创业未半而中道崩殂，今天下三分，<br>益州疲弊，此诚危急存亡之秋也。<br>然侍卫之臣不懈于内，忠志之士忘身于外者，<br>盖追先帝之殊遇，欲报之于陛下也。<br>诚宜开张圣听，以光先帝遗德，<br>恢弘志士之气，不宜妄自菲薄，<br>引喻失义，以塞忠谏之路也。</p>
@@ -360,9 +360,15 @@
   <entry>
     <title>微分方程</title>
     <url>/posts/57959/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>微分方程（Differential equation）是指由微分运算和常数项组成的方程。微分方程的形式一般为：</p>
-<script type="math/tex; mode=display">
-\frac{dy}{dx} = f(x,y)</script><p>其中，$y$是未知函数，$x$是自变量，$f(x,y)$是$y$的函数。微分方程的求解方法有数值法、解析法、方程组法等。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一阶微分方程"><a href="#一阶微分方程" class="headerlink" title="一阶微分方程"></a>一阶微分方程</h1><p><code>题目拿到手，首先要对题目类型进行分类，根据题目类型，我们可以将题目分为以下几类</code>：</p>
+<ul>
+<li><strong>变量可分离型</strong></li>
+<li><strong>齐次微分方程</strong></li>
+<li><strong>一阶线性微分方程</strong></li>
+<li><strong>积分方程<code>(了解)</code></strong></li>
+<li><strong>x(y)型方程<code>(了解)</code></strong></li>
+</ul>
+<h1 id="题型辨别："><a href="#题型辨别：" class="headerlink" title="题型辨别："></a><code>题型辨别</code>：</h1><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-15.png" alt="alt text"></p>
 <h1 id="题型总结："><a href="#题型总结：" class="headerlink" title="题型总结："></a><code>题型总结</code>：</h1><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image.png" alt="alt text"></p>
 <h2 id="变量可分离型"><a href="#变量可分离型" class="headerlink" title="变量可分离型"></a>变量可分离型</h2><p><code>解题步骤</code>：</p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-1.png" alt="alt text"></p>
@@ -392,8 +398,76 @@
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-9.png" alt="alt text"></p>
 <p><code>练习题</code>:</p>
 <ol>
-<li></li>
+<li><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-12.png" alt="alt text"></p>
+</li>
+<li><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-13.png" alt="alt text"></p>
+</li>
 </ol>
+<h2 id="积分方程-了解"><a href="#积分方程-了解" class="headerlink" title="积分方程(了解)"></a>积分方程<code>(了解)</code></h2><p><code>解题步骤</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-14.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-14.png" alt="alt text"></p>
+<h2 id="x-y-型方程"><a href="#x-y-型方程" class="headerlink" title="x(y)型方程"></a>x(y)型方程</h2><p><code>解题步骤</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-16.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-16.png" alt="alt text"></p>
+<h1 id="二阶微分方程"><a href="#二阶微分方程" class="headerlink" title="二阶微分方程"></a>二阶微分方程</h1><p><code>题目拿到手，首先要对题目类型进行分类，根据题目类型，我们可以将题目分为以下几类</code>：</p>
+<ul>
+<li><strong>可降阶的二阶微分方程<code>(了解)</code></strong></li>
+<li><strong>二阶常系数齐次线性微分方程</strong></li>
+<li><strong>n阶常系数齐次线性微分方程<code>(了解)</code></strong></li>
+<li><strong>二阶常系数非齐次线性微分方程<code>(了解)</code></strong></li>
+</ul>
+<h1 id="题型总结：-1"><a href="#题型总结：-1" class="headerlink" title="题型总结："></a><code>题型总结</code>：</h1><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-17.png" alt="alt text"></p>
+<h2 id="可降阶的二阶微分方程-了解"><a href="#可降阶的二阶微分方程-了解" class="headerlink" title="可降阶的二阶微分方程(了解)"></a>可降阶的二阶微分方程(了解)</h2><p><code>解题步骤</code>：</p>
+<blockquote>
+<p><strong><code>题型1</code></strong>:</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-22.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-23.png" alt="alt text"></p>
+<p><code>练习题</code>:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-24.png" alt="alt text"></p>
+<blockquote>
+<p><strong><code>题型2</code></strong>:</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-20.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-18.png" alt="alt text"></p>
+<p><code>练习题</code>:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-25.png" alt="alt text"></p>
+<blockquote>
+<p><strong><code>题型3</code></strong>:</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-21.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-19.png" alt="alt text"></p>
+<p><code>练习题</code>:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-26.png" alt="alt text"></p>
+<h2 id="二阶常系数齐次线性微分方程"><a href="#二阶常系数齐次线性微分方程" class="headerlink" title="二阶常系数齐次线性微分方程"></a>二阶常系数齐次线性微分方程</h2><p><code>解题步骤</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-27.png" alt="alt text"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-28.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-29.png" alt="alt text"></p>
+<h2 id="n阶常系数齐次线性微分方程-了解"><a href="#n阶常系数齐次线性微分方程-了解" class="headerlink" title="n阶常系数齐次线性微分方程(了解)"></a>n阶常系数齐次线性微分方程<code>(了解)</code></h2><p><code>解题步骤</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-31.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-30.png" alt="alt text"></p>
+<h2 id="二阶常系数非齐次线性微分方程-了解"><a href="#二阶常系数非齐次线性微分方程-了解" class="headerlink" title="二阶常系数非齐次线性微分方程(了解)"></a>二阶常系数非齐次线性微分方程<code>(了解)</code></h2><blockquote>
+<p><strong><code>题型1</code></strong>:</p>
+</blockquote>
+<p><code>解题步骤</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-32.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-33.png" alt="alt text"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-34.png" alt="alt text"></p>
+<blockquote>
+<p><strong><code>题型2</code></strong>:</p>
+</blockquote>
+<p><code>解题步骤</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-35.png" alt="alt text"></p>
+<p><code>例题</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/57959/image-36.png" alt="alt text"></p>
 ]]></content>
       <categories>
         <category>高等数学(下)复习</category>
@@ -675,6 +749,219 @@
       </categories>
       <tags>
         <tag>每日习题-期末考试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第12讲：深⼊理解指针-通过指针引用数组</title>
+    <url>/posts/18731/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p class="p center logo large">THE MATRIX</p>
+
+<div class="note success flat"><p>C语言知识点大总结</p>
+</div>
+
+<div class="note success flat"><p>本讲主要讨论的是指针与数组相关知识</p>
+</div>
+
+<div class="poem"><div class="poem-title">出师表</div><div class="poem-author">诸葛亮</div><p>先帝创业未半而中道崩殂，今天下三分，<br>益州疲弊，此诚危急存亡之秋也。<br>然侍卫之臣不懈于内，忠志之士忘身于外者，<br>盖追先帝之殊遇，欲报之于陛下也。<br>诚宜开张圣听，以光先帝遗德，<br>恢弘志士之气，不宜妄自菲薄，<br>引喻失义，以塞忠谏之路也。</p>
+</div>
+<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ol>
+<li><strong>数组名的理解</strong></li>
+<li><strong>*使用指针访问数</strong></li>
+<li><strong>一维数组传参的本质</strong></li>
+<li><strong>冒泡排序</strong></li>
+<li><strong>二级指针</strong></li>
+<li><strong>指针数组</strong></li>
+<li><strong>指针数组模拟二维数组</strong></li>
+</ol>
+<blockquote>
+<p><strong>正文开始</strong></p>
+</blockquote>
+<h1 id="数组名的理解-补充知识点"><a href="#数组名的理解-补充知识点" class="headerlink" title="数组名的理解(补充知识点)"></a>数组名的理解(补充知识点)</h1><blockquote>
+<p><strong>使用指针访问数组的内容时，有这样的代码：</strong></p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line"><span class="type">int</span> *p = &amp;arr[ <span class="number">0</span> ];</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>这里我们使用&amp;arr[0]的方式拿到了数组第一个元素的地址，但是其实数组名本来就是地址，而且是数组首元素的地址，我们来做个测试</strong>。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;                   </span><br><span class="line">	<span class="type">int</span> arr[<span class="number">10</span>] = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span> &#125;; <span class="comment">//数组在内存中是连续存放的,所以只用找到数组首元素的地址即可找到整个数组</span></span><br><span class="line">	<span class="comment">//int* p = &amp;arr[0]; //数组名是数组首元素的地址</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;&amp;arr[0] = %p\n&quot;</span>, &amp;arr[<span class="number">0</span>]); <span class="comment">//取出首元素，得到数组首元素的地址</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;arr     = %p\n&quot;</span>, arr); <span class="comment">//数组名就是数组首元素的地址</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出结果(一下是在x86(打印的地址较短)架构下编译的)：</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image.png" alt="alt text"></p>
+<blockquote>
+<p>我们发现数组名和数组首元素的地址打印出的结果一模一样，<strong>数组名就是数组首元素(第一个元素)的地址</strong>。</p>
+<p>这时候有同学会有疑问？数组名如果是数组首元素的地址，那下面的代码怎么理解呢？</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(arr)); <span class="comment">//sizeof是就是计算数组大小的，如果数组名表示首元素地址,x86——&gt;4,x64——&gt;8,但是在x86打印出的是40，x64打印出的是80，这时候就有点迷糊了。</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-1.png" alt="alt text"></p>
+<p><strong>输出的结果是： 40 ，如果arr是数组首元素的地址，那输出应该的应该是 4 / 8 才对</strong>。</p>
+<blockquote>
+<p><strong>其实数组名就是数组首元素(第一个元素)的地址是对的，但是有两个例外：</strong></p>
+</blockquote>
+<ul>
+<li><p><strong>sizeof(数组名)</strong> ，sizeof中<strong>单独放数组名</strong>，这里的数组名表示<strong>整个数组</strong>，计算的是<strong>整个数组的大小</strong>，单位是<strong>字节</strong>，所以<strong>打印</strong>出来的结果是<strong>40</strong>。</p>
+</li>
+<li><p><strong>&amp;数组名</strong> ，这里的数组名表示<strong>整个数组</strong>，取出的是 <strong>整个数组的地址</strong> （整个数组的地址和数组首元素的地址是有区别的）</p>
+</li>
+</ul>
+<p><strong>除此之外，任何地方使用数组名，数组名都表示首元素的地址</strong>。</p>
+<blockquote>
+<p><strong>这时有好奇的同学，再试一下这个代码：</strong></p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr[0] = %p\n&quot;</span>, &amp;arr[ <span class="number">0</span> ]); <span class="comment">//打印数组首元素的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;arr = %p\n&quot;</span>, arr); <span class="comment">//数组名打印数组首元素的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr = %p\n&quot;</span>, &amp;arr); <span class="comment">//打印整个数组的地址</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-2.png" alt="alt text"></p>
+<blockquote>
+<p><strong>三个打印结果一模一样，这时候又纳闷了，那arr和&amp;arr有啥区别呢？</strong></p>
+<p><strong>总结</strong></p>
+</blockquote>
+<p>指针类型<strong>决定了</strong>指针的差异</p>
+<hr>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr[0] = %p\n&quot;</span>, &amp;arr[ <span class="number">0</span> ]); <span class="comment">//打印数组首元素的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr[0]+1 = %p\n&quot;</span>, &amp;arr[ <span class="number">0</span> ]+ <span class="number">1</span> ); <span class="comment">//int*类型指针，地址加1，跳过第一个元素，4个字节</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;arr = %p\n&quot;</span>, arr); <span class="comment">//数组名打印数组首元素的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;arr+1 = %p\n&quot;</span>, arr+ <span class="number">1</span> ); <span class="comment">//int*类型指针，地址加1，跳过第一个元素，4个字节</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr = %p\n&quot;</span>, &amp;arr); <span class="comment">//打印整个数组的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr+1 = %p\n&quot;</span>, &amp;arr+ <span class="number">1</span> ); <span class="comment">//int*类型指针，地址加1，跳过整个数组，40个字节</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出结果：</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&amp;arr[ <span class="number">0</span> ] = <span class="number">0077F</span> <span class="number">820</span></span><br><span class="line">&amp;arr[ <span class="number">0</span> ]+ <span class="number">1</span> = <span class="number">0077F</span> <span class="number">824</span></span><br><span class="line"></span><br><span class="line">arr = <span class="number">0077F</span> <span class="number">820</span></span><br><span class="line">arr+ <span class="number">1</span> = <span class="number">0077F</span> <span class="number">824</span></span><br><span class="line"></span><br><span class="line">&amp;arr = <span class="number">0077F</span> <span class="number">820</span></span><br><span class="line">&amp;arr+ <span class="number">1</span> = <span class="number">0077F</span> <span class="number">848</span></span><br></pre></td></tr></table></figure>
+<p><strong>这里我们发现&amp;arr[ 0 ]和&amp;arr[ 0 ]+ 1 相差 4 个字节，arr和arr+ 1 相差 4 个字节，是因为&amp;arr[ 0 ] 和 arr都是首元素的地址，+ 1 就是跳过一个元素</strong>。</p>
+<p><strong>但是&amp;arr和&amp;arr+ 1 相差 40 个字节，这就是因为&amp;arr是数组的地址，+ 1 操作是跳过整个数组的</strong>。</p>
+<blockquote>
+<p><strong>到这里大家应该搞清楚数组名的意义了吧</strong>。</p>
+</blockquote>
+<p><strong>数组名是数组首元素的地址，但是有 2 个例外</strong>。</p>
+<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了14%的内容了</p></div></div>
+<h1 id="使用指针访问数组"><a href="#使用指针访问数组" class="headerlink" title="使用指针访问数组"></a>使用指针访问数组</h1><blockquote>
+<p><strong>有了前面知识的支持，再结合数组的特点，我们就可以很方便的使用指针访问数组了</strong>。</p>
+</blockquote>
+<hr>
+<p><strong>以下是使用数组下标访问数组元素的过程：</strong></p>
+<hr>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">    <span class="type">int</span> sz = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//整个数组大小/一个元素的大小=数组的元素个数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">       <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出结果:</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-3.png" alt="alt text"></p>
+<hr>
+<p><strong>以下是使用指针访问数组元素的过程：</strong></p>
+<hr>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">    <span class="type">int</span> sz = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//整个数组大小/一个元素的大小=数组的元素个数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span> ;</span><br><span class="line">    <span class="type">int</span>* p = arr;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">       <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, p+i);<span class="comment">//p+i是下标为i的元素的地址</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, *(p+i)); <span class="comment">//对(p+i)进行指针加法，解引用，得到元素的值</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出结果:</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-4.png" alt="alt text"></p>
+<blockquote>
+<p><strong>数组名arr是数组首元素的地址，可以赋值给p，其实数组名arr和p在这里是等价的。那我们可以使用arr[i]可以访问数组的元素，那p[i]是否也可以访问数组呢？</strong></p>
+</blockquote>
+<hr>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span> ;</span><br><span class="line">    <span class="type">int</span> sz = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//整个数组大小/一个元素的大小=数组的元素个数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="type">int</span>* p = arr;</span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//scanf(&quot;%d&quot;, p+i); //p+i是下标为i的元素的地址</span></span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, arr+i);<span class="comment">//也可以这样写</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;        </span><br><span class="line">        <span class="comment">//printf(&quot;%d &quot;, *(p+i));</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, *(arr+i)); <span class="comment">//也可以这样写</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出结果:</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-4.png" alt="alt text"></p>
+<p><strong>在第 18 行的地方，将<em>(p+i)换成p[i]也是能够正常打印的，所以本质上p[i]是等价于</em>(p+i)</strong>。</p>
+<p><strong>同理arr[i]应该等价于*(arr+i)，数组元素的访问在编译器处理的时候，也是转换成首元素的地址+偏移量求出元素的地址，然后解引用来访问的</strong>。</p>
+<blockquote>
+<p><strong>总结</strong></p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-5.png" alt="alt text"></p>
+<blockquote>
+<p><strong>内容总结</strong></p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-6.png" alt="alt text"></p>
+<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了28%的内容了</p></div></div>
+<h1 id="一维数组传参的本质"><a href="#一维数组传参的本质" class="headerlink" title="一维数组传参的本质"></a>一维数组传参的本质</h1><p><strong>数组我们学过了，之前也讲了，数组是可以传递给函数的，这个小节我们讨论一下数组传参的本质</strong>。</p>
+<blockquote>
+<p><strong>首先从一个问题开始，我们之前都是在函数外部计算数组的元素个数，那我们可以把数组传给一个函数后，函数内部求数组的元素个数吗？</strong></p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//数组传参的时候，形参可以写成指针形式，也可以写成数组形式</span></span><br><span class="line"><span class="comment">//写成数组形式，最简单，是为了方便理解，容易接受这种语法</span></span><br><span class="line"><span class="comment">//但是即使写成数组形式，本质上还是指针变量</span></span><br><span class="line"></span><br><span class="line">          <span class="comment">//int * arr</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span> arr[])</span> <span class="comment">//参数写成数组形式，本质上还是指针</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> sz2 = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//计算一个指针变量的大小</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;sz2 = %d\n&quot;</span>, sz2);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    <span class="type">int</span> sz1 = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//szl=10</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;sz1 = %d\n&quot;</span>, sz1); <span class="comment">//10</span></span><br><span class="line">    </span><br><span class="line">    test(arr); <span class="comment">//arr是数组名，本质上是数组首元素的地址</span></span><br><span class="line">    <span class="comment">//数组传参的本质，传递的是数组首元素的地址</span></span><br><span class="line">    <span class="comment">//所以形参即使写成数组形式，本质上也是一个指针变量</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出的结果：</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-7.png" alt="alt text"></p>
+<blockquote>
+<p><strong>我们发现在函数内部是没有正确获得数组的元素个数</strong>。</p>
+<p>这就要学习数组传参的本质了，上个小节我们学习了：</p>
+<p>数组名是数组首元素的地址；<br>那么在数组传参的时候，传递的是数组名，也就是说 本质上数组传参传递的是数组首元素的地址 。</p>
+<p>所以函数形参的部分理论上应该使用指针变量来接收首元素的地址。<br>那么在函数内部我们写sizeof(arr)计算的是一个地址的大小（单位字节）而不是数组的大小（单位字节）。<br>正是因为函数的参数部分是本质是指针，所以在函数内部是没办法求的数组元素个数的。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span> arr[])</span><span class="comment">//参数写成数组形式，本质上还是指针</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(arr));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span>* arr)</span><span class="comment">//参数写成指针形式</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(arr));<span class="comment">//计算一个指针变量的大小</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    test(arr);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>总结： 一维数组传参，形参的部分可以写成数组的形式，也可以写成指针的形式。</strong></p>
+</blockquote>
+<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了42%的内容了</p></div></div>
+<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><blockquote>
+<p>冒泡排序的核心思想就是：<strong>两两相邻的元素进行比较,不满足顺序就交换位置，满足顺序就找下一个数字</strong>。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">input</span><span class="params">(<span class="type">int</span> *arr, <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; sz; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, arr + i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">bubble_sort</span><span class="params">(<span class="type">int</span> *arr, <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">//确定趟数</span></span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; sz - <span class="number">1</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> flag = <span class="number">1</span>;<span class="comment">//假设已经满足顺序</span></span><br><span class="line">		<span class="comment">//每一趟内部的比较</span></span><br><span class="line">		<span class="type">int</span> j = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; sz<span class="number">-1</span>-i; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			count++;</span><br><span class="line">			<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>])</span><br><span class="line">			&#123;</span><br><span class="line">				flag = <span class="number">0</span>;<span class="comment">//还不是有序</span></span><br><span class="line">				<span class="comment">//交换</span></span><br><span class="line">				<span class="type">int</span> tmp = arr[j];</span><br><span class="line">				arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">				arr[j + <span class="number">1</span>] = tmp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (flag == <span class="number">1</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">print_arr</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; sz; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> arr[<span class="number">10</span>] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">	<span class="comment">//输入一些值</span></span><br><span class="line">	<span class="comment">//1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">	<span class="comment">//9 8 7 6 5 4 3 2 1 0</span></span><br><span class="line">	<span class="comment">//2 1 9 7 0 3 4 8 5 6 </span></span><br><span class="line">	<span class="type">int</span> sz = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);</span><br><span class="line">	input(arr, sz);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//排序 - 写一个函数完成数组的排序，排成升序</span></span><br><span class="line">	bubble_sort(arr, sz);<span class="comment">//使用冒泡排序</span></span><br><span class="line">	print_arr(arr, sz);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\ncount = %d\n&quot;</span>, count);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>画图理解</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-8.png" alt="alt text"></p>
+<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了56%的内容了</p></div></div>
+<h1 id="二级指针"><a href="#二级指针" class="headerlink" title="二级指针"></a>二级指针</h1><blockquote>
+<p><strong>什么是二级指针？</strong></p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>*</span><br><span class="line"><span class="type">int</span>*</span><br><span class="line"><span class="type">double</span>*</span><br><span class="line"><span class="comment">//一级指针</span></span><br></pre></td></tr></table></figure>
+<p><strong>这就是<code>二级指针</code>。</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span> ;</span><br><span class="line">    <span class="type">int</span>* pa = &amp;a ;<span class="comment">//pa一级指针变量</span></span><br><span class="line">    <span class="type">int</span>** ppa = &amp;pa ;<span class="comment">//ppa是二级指针变量，指向一级指针</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, **ppa); <span class="comment">//输出10</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">**ppa == *pa == a ==<span class="number">10</span> <span class="comment">//三者等价</span></span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-9.png" alt="alt text"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-10.png" alt="alt text"></p>
+<p><code>对于二级指针的运算有：</code></p>
+<ul>
+<li><em>ppa通过对ppa中的地址进行解引用，这样找到的是pa，</em>ppa其实访问的就是pa.</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> b = <span class="number">20</span> ;</span><br><span class="line">*ppa = &amp;b;<span class="comment">//等价于 pa = &amp;b;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><em>*ppa先通过</em>ppa找到pa,然后对pa进行解引用操作：*pa，那找到的是a.</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">**ppa = <span class="number">30</span> ;</span><br><span class="line"><span class="comment">//等价于*pa = 30;</span></span><br><span class="line"><span class="comment">//等价于a = 30;</span></span><br></pre></td></tr></table></figure>
+<p><strong>总结</strong></p>
+<p><code>二级指针变量是用来存放一级指针变量的地址的。</code></p>
+<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了70%的内容了</p></div></div>
+<h1 id="指针数组"><a href="#指针数组" class="headerlink" title="指针数组"></a>指针数组</h1><blockquote>
+<p><strong>指针数组是指针还是数组？</strong></p>
+</blockquote>
+<p><strong>我们类比一下，整型数组，是存放整型的数组，字符数组是存放字符的数组。</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> arr[<span class="number">10</span>]; <span class="comment">//字符数组-存储字符的数组</span></span><br><span class="line"><span class="type">int</span> arr[<span class="number">5</span>]; <span class="comment">//整型数组-存储整型的数组</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>那指针数组呢？</strong></p>
+</blockquote>
+<p><code>指针数组-存放指针的数组，数组的每个元素其实是指针类型，都是用来存放地址的。</code></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>* arr[<span class="number">5</span>]; <span class="comment">//存放字符指针的数组</span></span><br><span class="line"><span class="type">int</span>* arr[<span class="number">5</span>]; <span class="comment">//存放整型指针的数组</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>是存放指针的数组。</strong></p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-11.png" alt="alt text"></p>
+<blockquote>
+<p><strong>指针数组的每个元素都是用来存放地址（指针）的</strong>。</p>
+</blockquote>
+<p><strong>如下图：</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-12.png" alt="alt text"></p>
+<p><code>指针数组的每个元素是地址，又可以指向一块区域。</code></p>
+<blockquote>
+<p><strong>通过一个简单的例子来说明：</strong></p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">20</span>;</span><br><span class="line">    <span class="type">int</span> c = <span class="number">30</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//使用指针变量，这样太麻烦了，所以使用指针数组</span></span><br><span class="line">    <span class="comment">//int* p1 = &amp;a;</span></span><br><span class="line">    <span class="comment">//int* p2 = &amp;b;</span></span><br><span class="line">    <span class="comment">//int* p3 = &amp;c;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//使用指针数组    </span></span><br><span class="line">    <span class="type">int</span>* arr[<span class="number">3</span>] = &#123; &amp;a, &amp;b, &amp;c &#125;; <span class="comment">//存放3个整型指针的数组</span></span><br><span class="line">    <span class="comment">//              0    1   2  //通过下标进行指针解引用</span></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, *(arr[i])); <span class="comment">//解引用，输出地址的值</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>*输出结果：</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="number">10</span> <span class="number">20</span> <span class="number">30</span></span><br></pre></td></tr></table></figure>
+<p><code>说明：</code></p>
+<ol>
+<li><p><strong>指针数组的每个元素是地址，解引用可以得到地址的值。</strong></p>
+</li>
+<li><p><strong>指针数组的本质就是存放指针的数组，数组的每个元素都是指针类型，都是用来存放地址的。</strong></p>
+</li>
+<li><p><strong>指针数组的每个元素都是地址，又可以指向一块区域。</strong></p>
+</li>
+</ol>
+<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了84%的内容了</p></div></div>
+<h1 id="指针数组模拟二维数组"><a href="#指针数组模拟二维数组" class="headerlink" title="指针数组模拟二维数组"></a>指针数组模拟二维数组</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr1[<span class="number">5</span>] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> &#125;; <span class="comment">//定义3个整型一维数组</span></span><br><span class="line">    <span class="type">int</span> arr2[<span class="number">5</span>] = &#123; <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> &#125;;</span><br><span class="line">    <span class="type">int</span> arr3[<span class="number">5</span>] = &#123; <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> &#125;;</span><br><span class="line">    <span class="comment">//arr1 arr2 arr3 是三个数组的数组名，表示三个数组的首元素的地址</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//数组名是数组首元素的地址，类型是int*的，就可以存放在arr数组中</span></span><br><span class="line">    <span class="type">int</span>* arr[ <span class="number">3</span> ] = &#123;arr1, arr2, arr3&#125;;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span> ;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt; <span class="number">3</span> ; i++) <span class="comment">//通过for循环，访问三个数组的数组名</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> j = <span class="number">0</span> ;</span><br><span class="line">        <span class="keyword">for</span>(j= <span class="number">0</span> ; j&lt; <span class="number">5</span> ; j++) <span class="comment">//通过for循环，访问三个数组中某个数组的元素</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i][j]); <span class="comment">//*(*(arr+i)+j)</span></span><br><span class="line">        &#125;</span><br><span class="line">         <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>输出结果：</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span></span><br><span class="line"><span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span></span><br></pre></td></tr></table></figure>
+<p><code>画图理解:</code></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-13.png" alt="alt text"></p>
+<blockquote>
+<p><strong>下面是对上述<code>第10~20行</code>代码的解释：</strong></p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-14.png" alt="arr1 arr2 arr3 是三个数组的数组名，表示三个数组的首元素的地址"></p>
+<blockquote>
+<p><strong><code>arr[i]</code>是<code>访问arr数组的元素</code>，<code>arr[i]</code>找到的数组元素<code>指向了整型一维数组</code>，<code>arr[i][j]</code>就是<code>整型一维数组中的元素</code>。</strong></p>
+<p><strong>上述的代码模拟出二维数组的效果，实际上并非完全是二维数组，因为每一行并非是连续的。</strong></p>
+</blockquote>
+<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了100%的内容了，你真的太棒了！</p></div></div>
+<blockquote>
+<p><strong>完</strong></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>C语言程序设计</category>
+      </categories>
+      <tags>
+        <tag>C语言程序设计知识点总结</tag>
       </tags>
   </entry>
   <entry>
@@ -1028,216 +1315,24 @@
       </tags>
   </entry>
   <entry>
-    <title>第12讲：深⼊理解指针-通过指针引用数组</title>
-    <url>/posts/18731/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p class="p center logo large">THE MATRIX</p>
-
-<div class="note success flat"><p>C语言知识点大总结</p>
-</div>
-
-<div class="note success flat"><p>本讲主要讨论的是指针与数组相关知识</p>
-</div>
-
-<div class="poem"><div class="poem-title">出师表</div><div class="poem-author">诸葛亮</div><p>先帝创业未半而中道崩殂，今天下三分，<br>益州疲弊，此诚危急存亡之秋也。<br>然侍卫之臣不懈于内，忠志之士忘身于外者，<br>盖追先帝之殊遇，欲报之于陛下也。<br>诚宜开张圣听，以光先帝遗德，<br>恢弘志士之气，不宜妄自菲薄，<br>引喻失义，以塞忠谏之路也。</p>
-</div>
-<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ol>
-<li><strong>数组名的理解</strong></li>
-<li><strong>*使用指针访问数</strong></li>
-<li><strong>一维数组传参的本质</strong></li>
-<li><strong>冒泡排序</strong></li>
-<li><strong>二级指针</strong></li>
-<li><strong>指针数组</strong></li>
-<li><strong>指针数组模拟二维数组</strong></li>
-</ol>
-<blockquote>
-<p><strong>正文开始</strong></p>
-</blockquote>
-<h1 id="数组名的理解-补充知识点"><a href="#数组名的理解-补充知识点" class="headerlink" title="数组名的理解(补充知识点)"></a>数组名的理解(补充知识点)</h1><blockquote>
-<p><strong>使用指针访问数组的内容时，有这样的代码：</strong></p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line"><span class="type">int</span> *p = &amp;arr[ <span class="number">0</span> ];</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>这里我们使用&amp;arr[0]的方式拿到了数组第一个元素的地址，但是其实数组名本来就是地址，而且是数组首元素的地址，我们来做个测试</strong>。</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;                   </span><br><span class="line">	<span class="type">int</span> arr[<span class="number">10</span>] = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span> &#125;; <span class="comment">//数组在内存中是连续存放的,所以只用找到数组首元素的地址即可找到整个数组</span></span><br><span class="line">	<span class="comment">//int* p = &amp;arr[0]; //数组名是数组首元素的地址</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;&amp;arr[0] = %p\n&quot;</span>, &amp;arr[<span class="number">0</span>]); <span class="comment">//取出首元素，得到数组首元素的地址</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;arr     = %p\n&quot;</span>, arr); <span class="comment">//数组名就是数组首元素的地址</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>输出结果(一下是在x86(打印的地址较短)架构下编译的)：</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image.png" alt="alt text"></p>
-<blockquote>
-<p>我们发现数组名和数组首元素的地址打印出的结果一模一样，<strong>数组名就是数组首元素(第一个元素)的地址</strong>。</p>
-<p>这时候有同学会有疑问？数组名如果是数组首元素的地址，那下面的代码怎么理解呢？</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(arr)); <span class="comment">//sizeof是就是计算数组大小的，如果数组名表示首元素地址,x86——&gt;4,x64——&gt;8,但是在x86打印出的是40，x64打印出的是80，这时候就有点迷糊了。</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-1.png" alt="alt text"></p>
-<p><strong>输出的结果是： 40 ，如果arr是数组首元素的地址，那输出应该的应该是 4 / 8 才对</strong>。</p>
-<blockquote>
-<p><strong>其实数组名就是数组首元素(第一个元素)的地址是对的，但是有两个例外：</strong></p>
-</blockquote>
-<ul>
-<li><p><strong>sizeof(数组名)</strong> ，sizeof中<strong>单独放数组名</strong>，这里的数组名表示<strong>整个数组</strong>，计算的是<strong>整个数组的大小</strong>，单位是<strong>字节</strong>，所以<strong>打印</strong>出来的结果是<strong>40</strong>。</p>
-</li>
-<li><p><strong>&amp;数组名</strong> ，这里的数组名表示<strong>整个数组</strong>，取出的是 <strong>整个数组的地址</strong> （整个数组的地址和数组首元素的地址是有区别的）</p>
-</li>
-</ul>
-<p><strong>除此之外，任何地方使用数组名，数组名都表示首元素的地址</strong>。</p>
-<blockquote>
-<p><strong>这时有好奇的同学，再试一下这个代码：</strong></p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr[0] = %p\n&quot;</span>, &amp;arr[ <span class="number">0</span> ]); <span class="comment">//打印数组首元素的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;arr = %p\n&quot;</span>, arr); <span class="comment">//数组名打印数组首元素的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr = %p\n&quot;</span>, &amp;arr); <span class="comment">//打印整个数组的地址</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-2.png" alt="alt text"></p>
-<blockquote>
-<p><strong>三个打印结果一模一样，这时候又纳闷了，那arr和&amp;arr有啥区别呢？</strong></p>
-<p><strong>总结</strong></p>
-</blockquote>
-<p>指针类型<strong>决定了</strong>指针的差异</p>
-<hr>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr[0] = %p\n&quot;</span>, &amp;arr[ <span class="number">0</span> ]); <span class="comment">//打印数组首元素的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr[0]+1 = %p\n&quot;</span>, &amp;arr[ <span class="number">0</span> ]+ <span class="number">1</span> ); <span class="comment">//int*类型指针，地址加1，跳过第一个元素，4个字节</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;arr = %p\n&quot;</span>, arr); <span class="comment">//数组名打印数组首元素的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;arr+1 = %p\n&quot;</span>, arr+ <span class="number">1</span> ); <span class="comment">//int*类型指针，地址加1，跳过第一个元素，4个字节</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr = %p\n&quot;</span>, &amp;arr); <span class="comment">//打印整个数组的地址</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;arr+1 = %p\n&quot;</span>, &amp;arr+ <span class="number">1</span> ); <span class="comment">//int*类型指针，地址加1，跳过整个数组，40个字节</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>输出结果：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&amp;arr[ <span class="number">0</span> ] = <span class="number">0077F</span> <span class="number">820</span></span><br><span class="line">&amp;arr[ <span class="number">0</span> ]+ <span class="number">1</span> = <span class="number">0077F</span> <span class="number">824</span></span><br><span class="line"></span><br><span class="line">arr = <span class="number">0077F</span> <span class="number">820</span></span><br><span class="line">arr+ <span class="number">1</span> = <span class="number">0077F</span> <span class="number">824</span></span><br><span class="line"></span><br><span class="line">&amp;arr = <span class="number">0077F</span> <span class="number">820</span></span><br><span class="line">&amp;arr+ <span class="number">1</span> = <span class="number">0077F</span> <span class="number">848</span></span><br></pre></td></tr></table></figure>
-<p><strong>这里我们发现&amp;arr[ 0 ]和&amp;arr[ 0 ]+ 1 相差 4 个字节，arr和arr+ 1 相差 4 个字节，是因为&amp;arr[ 0 ] 和 arr都是首元素的地址，+ 1 就是跳过一个元素</strong>。</p>
-<p><strong>但是&amp;arr和&amp;arr+ 1 相差 40 个字节，这就是因为&amp;arr是数组的地址，+ 1 操作是跳过整个数组的</strong>。</p>
-<blockquote>
-<p><strong>到这里大家应该搞清楚数组名的意义了吧</strong>。</p>
-</blockquote>
-<p><strong>数组名是数组首元素的地址，但是有 2 个例外</strong>。</p>
-<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了14%的内容了</p></div></div>
-<h1 id="使用指针访问数组"><a href="#使用指针访问数组" class="headerlink" title="使用指针访问数组"></a>使用指针访问数组</h1><blockquote>
-<p><strong>有了前面知识的支持，再结合数组的特点，我们就可以很方便的使用指针访问数组了</strong>。</p>
-</blockquote>
-<hr>
-<p><strong>以下是使用数组下标访问数组元素的过程：</strong></p>
-<hr>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">    <span class="type">int</span> sz = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//整个数组大小/一个元素的大小=数组的元素个数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">       <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>输出结果:</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-3.png" alt="alt text"></p>
-<hr>
-<p><strong>以下是使用指针访问数组元素的过程：</strong></p>
-<hr>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">    <span class="type">int</span> sz = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//整个数组大小/一个元素的大小=数组的元素个数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span> ;</span><br><span class="line">    <span class="type">int</span>* p = arr;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">       <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, p+i);<span class="comment">//p+i是下标为i的元素的地址</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, *(p+i)); <span class="comment">//对(p+i)进行指针加法，解引用，得到元素的值</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>输出结果:</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-4.png" alt="alt text"></p>
-<blockquote>
-<p><strong>数组名arr是数组首元素的地址，可以赋值给p，其实数组名arr和p在这里是等价的。那我们可以使用arr[i]可以访问数组的元素，那p[i]是否也可以访问数组呢？</strong></p>
-</blockquote>
-<hr>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span> ;</span><br><span class="line">    <span class="type">int</span> sz = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//整个数组大小/一个元素的大小=数组的元素个数</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//输入</span></span><br><span class="line">    <span class="type">int</span>* p = arr;</span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//scanf(&quot;%d&quot;, p+i); //p+i是下标为i的元素的地址</span></span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, arr+i);<span class="comment">//也可以这样写</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//输出</span></span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt;sz; i++)</span><br><span class="line">    &#123;        </span><br><span class="line">        <span class="comment">//printf(&quot;%d &quot;, *(p+i));</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, *(arr+i)); <span class="comment">//也可以这样写</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>输出结果:</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-4.png" alt="alt text"></p>
-<p><strong>在第 18 行的地方，将<em>(p+i)换成p[i]也是能够正常打印的，所以本质上p[i]是等价于</em>(p+i)</strong>。</p>
-<p><strong>同理arr[i]应该等价于*(arr+i)，数组元素的访问在编译器处理的时候，也是转换成首元素的地址+偏移量求出元素的地址，然后解引用来访问的</strong>。</p>
-<blockquote>
-<p><strong>总结</strong></p>
-</blockquote>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-5.png" alt="alt text"></p>
-<blockquote>
-<p><strong>内容总结</strong></p>
-</blockquote>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-6.png" alt="alt text"></p>
-<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了28%的内容了</p></div></div>
-<h1 id="一维数组传参的本质"><a href="#一维数组传参的本质" class="headerlink" title="一维数组传参的本质"></a>一维数组传参的本质</h1><p><strong>数组我们学过了，之前也讲了，数组是可以传递给函数的，这个小节我们讨论一下数组传参的本质</strong>。</p>
-<blockquote>
-<p><strong>首先从一个问题开始，我们之前都是在函数外部计算数组的元素个数，那我们可以把数组传给一个函数后，函数内部求数组的元素个数吗？</strong></p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//数组传参的时候，形参可以写成指针形式，也可以写成数组形式</span></span><br><span class="line"><span class="comment">//写成数组形式，最简单，是为了方便理解，容易接受这种语法</span></span><br><span class="line"><span class="comment">//但是即使写成数组形式，本质上还是指针变量</span></span><br><span class="line"></span><br><span class="line">          <span class="comment">//int * arr</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span> arr[])</span> <span class="comment">//参数写成数组形式，本质上还是指针</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> sz2 = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//计算一个指针变量的大小</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;sz2 = %d\n&quot;</span>, sz2);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    <span class="type">int</span> sz1 = <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(arr[ <span class="number">0</span> ]); <span class="comment">//szl=10</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;sz1 = %d\n&quot;</span>, sz1); <span class="comment">//10</span></span><br><span class="line">    </span><br><span class="line">    test(arr); <span class="comment">//arr是数组名，本质上是数组首元素的地址</span></span><br><span class="line">    <span class="comment">//数组传参的本质，传递的是数组首元素的地址</span></span><br><span class="line">    <span class="comment">//所以形参即使写成数组形式，本质上也是一个指针变量</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>输出的结果：</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-7.png" alt="alt text"></p>
-<blockquote>
-<p><strong>我们发现在函数内部是没有正确获得数组的元素个数</strong>。</p>
-<p>这就要学习数组传参的本质了，上个小节我们学习了：</p>
-<p>数组名是数组首元素的地址；<br>那么在数组传参的时候，传递的是数组名，也就是说 本质上数组传参传递的是数组首元素的地址 。</p>
-<p>所以函数形参的部分理论上应该使用指针变量来接收首元素的地址。<br>那么在函数内部我们写sizeof(arr)计算的是一个地址的大小（单位字节）而不是数组的大小（单位字节）。<br>正是因为函数的参数部分是本质是指针，所以在函数内部是没办法求的数组元素个数的。</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span> arr[])</span><span class="comment">//参数写成数组形式，本质上还是指针</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(arr));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">test</span><span class="params">(<span class="type">int</span>* arr)</span><span class="comment">//参数写成指针形式</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="keyword">sizeof</span>(arr));<span class="comment">//计算一个指针变量的大小</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[ <span class="number">10</span> ] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> , <span class="number">8</span> , <span class="number">9</span> , <span class="number">10</span> &#125;;</span><br><span class="line">    test(arr);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>总结： 一维数组传参，形参的部分可以写成数组的形式，也可以写成指针的形式。</strong></p>
-</blockquote>
-<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了42%的内容了</p></div></div>
-<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><blockquote>
-<p>冒泡排序的核心思想就是：<strong>两两相邻的元素进行比较,不满足顺序就交换位置，满足顺序就找下一个数字</strong>。</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">input</span><span class="params">(<span class="type">int</span> *arr, <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; sz; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, arr + i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">bubble_sort</span><span class="params">(<span class="type">int</span> *arr, <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">//确定趟数</span></span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; sz - <span class="number">1</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> flag = <span class="number">1</span>;<span class="comment">//假设已经满足顺序</span></span><br><span class="line">		<span class="comment">//每一趟内部的比较</span></span><br><span class="line">		<span class="type">int</span> j = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; sz<span class="number">-1</span>-i; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			count++;</span><br><span class="line">			<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>])</span><br><span class="line">			&#123;</span><br><span class="line">				flag = <span class="number">0</span>;<span class="comment">//还不是有序</span></span><br><span class="line">				<span class="comment">//交换</span></span><br><span class="line">				<span class="type">int</span> tmp = arr[j];</span><br><span class="line">				arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">				arr[j + <span class="number">1</span>] = tmp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (flag == <span class="number">1</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">print_arr</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; sz; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> arr[<span class="number">10</span>] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">	<span class="comment">//输入一些值</span></span><br><span class="line">	<span class="comment">//1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">	<span class="comment">//9 8 7 6 5 4 3 2 1 0</span></span><br><span class="line">	<span class="comment">//2 1 9 7 0 3 4 8 5 6 </span></span><br><span class="line">	<span class="type">int</span> sz = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);</span><br><span class="line">	input(arr, sz);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//排序 - 写一个函数完成数组的排序，排成升序</span></span><br><span class="line">	bubble_sort(arr, sz);<span class="comment">//使用冒泡排序</span></span><br><span class="line">	print_arr(arr, sz);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\ncount = %d\n&quot;</span>, count);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>画图理解</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-8.png" alt="alt text"></p>
-<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了56%的内容了</p></div></div>
-<h1 id="二级指针"><a href="#二级指针" class="headerlink" title="二级指针"></a>二级指针</h1><blockquote>
-<p><strong>什么是二级指针？</strong></p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>*</span><br><span class="line"><span class="type">int</span>*</span><br><span class="line"><span class="type">double</span>*</span><br><span class="line"><span class="comment">//一级指针</span></span><br></pre></td></tr></table></figure>
-<p><strong>这就是<code>二级指针</code>。</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span> ;</span><br><span class="line">    <span class="type">int</span>* pa = &amp;a ;<span class="comment">//pa一级指针变量</span></span><br><span class="line">    <span class="type">int</span>** ppa = &amp;pa ;<span class="comment">//ppa是二级指针变量，指向一级指针</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, **ppa); <span class="comment">//输出10</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">**ppa == *pa == a ==<span class="number">10</span> <span class="comment">//三者等价</span></span><br></pre></td></tr></table></figure>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-9.png" alt="alt text"></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-10.png" alt="alt text"></p>
-<p><code>对于二级指针的运算有：</code></p>
-<ul>
-<li><em>ppa通过对ppa中的地址进行解引用，这样找到的是pa，</em>ppa其实访问的就是pa.</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> b = <span class="number">20</span> ;</span><br><span class="line">*ppa = &amp;b;<span class="comment">//等价于 pa = &amp;b;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><em>*ppa先通过</em>ppa找到pa,然后对pa进行解引用操作：*pa，那找到的是a.</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">**ppa = <span class="number">30</span> ;</span><br><span class="line"><span class="comment">//等价于*pa = 30;</span></span><br><span class="line"><span class="comment">//等价于a = 30;</span></span><br></pre></td></tr></table></figure>
-<p><strong>总结</strong></p>
-<p><code>二级指针变量是用来存放一级指针变量的地址的。</code></p>
-<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了70%的内容了</p></div></div>
-<h1 id="指针数组"><a href="#指针数组" class="headerlink" title="指针数组"></a>指针数组</h1><blockquote>
-<p><strong>指针数组是指针还是数组？</strong></p>
-</blockquote>
-<p><strong>我们类比一下，整型数组，是存放整型的数组，字符数组是存放字符的数组。</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> arr[<span class="number">10</span>]; <span class="comment">//字符数组-存储字符的数组</span></span><br><span class="line"><span class="type">int</span> arr[<span class="number">5</span>]; <span class="comment">//整型数组-存储整型的数组</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>那指针数组呢？</strong></p>
-</blockquote>
-<p><code>指针数组-存放指针的数组，数组的每个元素其实是指针类型，都是用来存放地址的。</code></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span>* arr[<span class="number">5</span>]; <span class="comment">//存放字符指针的数组</span></span><br><span class="line"><span class="type">int</span>* arr[<span class="number">5</span>]; <span class="comment">//存放整型指针的数组</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>是存放指针的数组。</strong></p>
-</blockquote>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-11.png" alt="alt text"></p>
-<blockquote>
-<p><strong>指针数组的每个元素都是用来存放地址（指针）的</strong>。</p>
-</blockquote>
-<p><strong>如下图：</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-12.png" alt="alt text"></p>
-<p><code>指针数组的每个元素是地址，又可以指向一块区域。</code></p>
-<blockquote>
-<p><strong>通过一个简单的例子来说明：</strong></p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">20</span>;</span><br><span class="line">    <span class="type">int</span> c = <span class="number">30</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//使用指针变量，这样太麻烦了，所以使用指针数组</span></span><br><span class="line">    <span class="comment">//int* p1 = &amp;a;</span></span><br><span class="line">    <span class="comment">//int* p2 = &amp;b;</span></span><br><span class="line">    <span class="comment">//int* p3 = &amp;c;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//使用指针数组    </span></span><br><span class="line">    <span class="type">int</span>* arr[<span class="number">3</span>] = &#123; &amp;a, &amp;b, &amp;c &#125;; <span class="comment">//存放3个整型指针的数组</span></span><br><span class="line">    <span class="comment">//              0    1   2  //通过下标进行指针解引用</span></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, *(arr[i])); <span class="comment">//解引用，输出地址的值</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>*输出结果：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="number">10</span> <span class="number">20</span> <span class="number">30</span></span><br></pre></td></tr></table></figure>
-<p><code>说明：</code></p>
-<ol>
-<li><p><strong>指针数组的每个元素是地址，解引用可以得到地址的值。</strong></p>
-</li>
-<li><p><strong>指针数组的本质就是存放指针的数组，数组的每个元素都是指针类型，都是用来存放地址的。</strong></p>
-</li>
-<li><p><strong>指针数组的每个元素都是地址，又可以指向一块区域。</strong></p>
-</li>
-</ol>
-<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了84%的内容了</p></div></div>
-<h1 id="指针数组模拟二维数组"><a href="#指针数组模拟二维数组" class="headerlink" title="指针数组模拟二维数组"></a>指针数组模拟二维数组</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr1[<span class="number">5</span>] = &#123; <span class="number">1</span> , <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> &#125;; <span class="comment">//定义3个整型一维数组</span></span><br><span class="line">    <span class="type">int</span> arr2[<span class="number">5</span>] = &#123; <span class="number">2</span> , <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> &#125;;</span><br><span class="line">    <span class="type">int</span> arr3[<span class="number">5</span>] = &#123; <span class="number">3</span> , <span class="number">4</span> , <span class="number">5</span> , <span class="number">6</span> , <span class="number">7</span> &#125;;</span><br><span class="line">    <span class="comment">//arr1 arr2 arr3 是三个数组的数组名，表示三个数组的首元素的地址</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//数组名是数组首元素的地址，类型是int*的，就可以存放在arr数组中</span></span><br><span class="line">    <span class="type">int</span>* arr[ <span class="number">3</span> ] = &#123;arr1, arr2, arr3&#125;;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span> ;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i= <span class="number">0</span> ; i&lt; <span class="number">3</span> ; i++) <span class="comment">//通过for循环，访问三个数组的数组名</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> j = <span class="number">0</span> ;</span><br><span class="line">        <span class="keyword">for</span>(j= <span class="number">0</span> ; j&lt; <span class="number">5</span> ; j++) <span class="comment">//通过for循环，访问三个数组中某个数组的元素</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i][j]); <span class="comment">//*(*(arr+i)+j)</span></span><br><span class="line">        &#125;</span><br><span class="line">         <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>输出结果：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span></span><br><span class="line"><span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span></span><br></pre></td></tr></table></figure>
-<p><code>画图理解:</code></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-13.png" alt="alt text"></p>
-<blockquote>
-<p><strong>下面是对上述<code>第10~20行</code>代码的解释：</strong></p>
-</blockquote>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/18731/image-14.png" alt="arr1 arr2 arr3 是三个数组的数组名，表示三个数组的首元素的地址"></p>
-<blockquote>
-<p><strong><code>arr[i]</code>是<code>访问arr数组的元素</code>，<code>arr[i]</code>找到的数组元素<code>指向了整型一维数组</code>，<code>arr[i][j]</code>就是<code>整型一维数组中的元素</code>。</strong></p>
-<p><strong>上述的代码模拟出二维数组的效果，实际上并非完全是二维数组，因为每一行并非是连续的。</strong></p>
-</blockquote>
-<div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><p>加油你已经看了100%的内容了，你真的太棒了！</p></div></div>
-<blockquote>
-<p><strong>完</strong></p>
-</blockquote>
-]]></content>
+    <title>第5章 循环结构程序设计</title>
+    <url>/posts/25879/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="5-3-用-do-while-语句实现循环"><a href="#5-3-用-do-while-语句实现循环" class="headerlink" title="5.3 用 do-while 语句实现循环"></a>5.3 用 do-while 语句实现循环</h1><p><code>注意</code>: <strong>do-while 语句的特点是，先无条件地执行循环体，然后判断循环条件是否成立。如果成立，则继续执行循环体，否则终止循环</strong>。</p>
+<p><code>举例</code>:</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">1</span>;             <span class="comment">//设变量i的初值为1</span></span><br><span class="line"><span class="keyword">do</span>                     <span class="comment">//循环结构开始</span></span><br><span class="line">  &#123;</span><br><span class="line">     <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,i++); <span class="comment">//循环体，输出i的值，并自增1</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">while</span> (i &lt;= <span class="number">100</span>);      <span class="comment">//当i &lt;= 100时，循环继续，否则终止循环。</span></span><br></pre></td></tr></table></figure>
+<p><strong>do-while 语句的一般形式如下</strong>：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span></span><br><span class="line">  语句</span><br><span class="line"><span class="keyword">while</span> (表达式)；</span><br></pre></td></tr></table></figure>
+<p><code>N-S图表示</code>:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/25879/image.png" alt="N-S表示do-while语句"></p>
+<p>先执行一次指定的循环ynb语句，然后判别表达式，当表达式的值为非零(“真”)时，返回重新执行语句，如此反复，直到表达式的值为零(“假”)时，循环终止。</p>
+<p>【例5.3】 while 和 do-while 循环的比较</p>
+<p>(1) 用 while 循环:</p>
+<h1 id="5-7-改变循环执行的状态"><a href="#5-7-改变循环执行的状态" class="headerlink" title="5.7 改变循环执行的状态"></a>5.7 改变循环执行的状态</h1>]]></content>
       <categories>
         <category>C语言程序设计</category>
       </categories>
       <tags>
-        <tag>C语言程序设计知识点总结</tag>
+        <tag>C语言程序设计期末复习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -2507,6 +2602,59 @@
       </tags>
   </entry>
   <entry>
+    <title>第7章 用函数实现模块化程序设计</title>
+    <url>/posts/18010/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="函数的定义"><a href="#函数的定义" class="headerlink" title="函数的定义"></a>函数的定义</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>函数名: <code>add</code></p>
+</li>
+<li><p>参数: <code>a</code> 和 <code>b</code></p>
+</li>
+<li><p>返回值: <code>int</code></p>
+</li>
+<li><p>函数体: <code>return a + b;</code></p>
+</li>
+</ol>
+<h1 id="函数的调用"><a href="#函数的调用" class="headerlink" title="函数的调用"></a>函数的调用</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">10</span>, y = <span class="number">20</span>;</span><br><span class="line">    <span class="type">int</span> z = add(x, y);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;The sum is: %d&quot;</span>, z);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>函数名: <code>main</code></p>
+</li>
+<li><p>参数: 无</p>
+</li>
+<li><p>返回值: <code>int</code></p>
+</li>
+<li><p>函数体: 调用 <code>add</code> 函数并将 <code>x</code> 和 <code>y</code> 作为参数，将结果赋值给 <code>z</code>，然后输出 <code>z</code> 的值。</p>
+</li>
+</ol>
+<h1 id="数组作为函数参数"><a href="#数组作为函数参数" class="headerlink" title="数组作为函数参数"></a>数组作为函数参数</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">printArray</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> size)</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; size; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line">    <span class="type">int</span> size = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);</span><br><span class="line">    printArray(arr, size);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>函数名: <code>printArray</code></p>
+</li>
+<li><p>参数: <code>arr</code> 和 <code>size</code></p>
+</li>
+<li><p>返回值: <code>void</code></p>
+</li>
+<li><p>函数体: 打印数组 <code>arr</code> 中的元素。</p>
+</li>
+</ol>
+<h1 id="全局变量和局部变量的比较"><a href="#全局变量和局部变量的比较" class="headerlink" title="全局变量和局部变量的比较"></a>全局变量和局部变量的比较</h1><p><code>从两方面分析两者的差异</code>:</p>
+<ol>
+<li><p>作用域: 全局变量的作用域是整个程序，而局部变量的作用域是函数内部。</p>
+</li>
+<li><p>生命周期: 全局变量的生命周期是整个程序的运行期间，而局部变量的生命周期则是函数的执行期间。</p>
+</li>
+</ol>
+<h1 id="课后习题第9题"><a href="#课后习题第9题" class="headerlink" title="课后习题第9题"></a>课后习题第9题</h1><p><strong><code>编写一个函数，由实参传来一个字符串，统计此字符串中字母，数字，空格和其他字符的个数，在主函数中输入字符串以及输出上述的结果</code></strong>。</p>
+<p>代码呈现：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 禁用安全警告，允许使用不安全的字符串函数</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>  _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span> <span class="comment">// 包含标准输入输出库</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 全局变量，分别记录数字、空格、字母、其他字符的个数</span></span><br><span class="line"><span class="type">int</span> letter, digit, space, other;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 主函数</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 声明count函数，该函数将用于统计字符串中各类字符的数量</span></span><br><span class="line">    <span class="type">void</span> <span class="title function_">count</span><span class="params">(<span class="type">char</span>[])</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 定义一个字符数组text，大小为80，用于存储用户输入的字符串</span></span><br><span class="line">    <span class="type">char</span> text[<span class="number">80</span>];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 提示用户输入一个字符串</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入一个字符串：\n&quot;</span>);</span><br><span class="line">    <span class="comment">// 使用gets函数读取用户输入的字符串（注意：gets函数存在安全隐患，推荐使用fgets代替）</span></span><br><span class="line">    gets(text);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出用户输入的字符串</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;string:\n&quot;</span>);</span><br><span class="line">    <span class="built_in">puts</span>(text);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 初始化各类字符计数器</span></span><br><span class="line">    letter = <span class="number">0</span>;</span><br><span class="line">    digit = <span class="number">0</span>;</span><br><span class="line">    space = <span class="number">0</span>;</span><br><span class="line">    other = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 调用count函数，传入用户输入的字符串，进行字符类型统计</span></span><br><span class="line">    count(text);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出统计结果</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;该字符串中有，数字：%d个，空格%d个，字母%d个，其他字符%d个&quot;</span>, digit, space, letter, other);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">// 程序正常结束</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// count函数，用于统计字符串中各类字符的数量</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">count</span><span class="params">(<span class="type">char</span> str[])</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="comment">// 遍历字符串中的每一个字符，直到遇到字符串结束标志&#x27;\0&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; str[i] != <span class="string">&#x27;\0&#x27;</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 判断当前字符是否为数字（ASCII码在&#x27;0&#x27;到&#x27;9&#x27;之间）</span></span><br><span class="line">        <span class="keyword">if</span> (str[i] &gt;= <span class="string">&#x27;0&#x27;</span> &amp;&amp; str[i] &lt;= <span class="string">&#x27;9&#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            digit++; <span class="comment">// 数字计数加一</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 判断当前字符是否为空格</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (str[i] == <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            space++; <span class="comment">// 空格计数加一</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 判断当前字符是否为字母（小写字母&#x27;a&#x27;到&#x27;z&#x27;或大写字母&#x27;A&#x27;到&#x27;Z&#x27;）</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> ((str[i] &gt;= <span class="string">&#x27;a&#x27;</span> &amp;&amp; str[i] &lt;= <span class="string">&#x27;z&#x27;</span>) || (str[i] &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; str[i] &lt;= <span class="string">&#x27;Z&#x27;</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            letter++; <span class="comment">// 字母计数加一</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 如果上述条件都不满足，则认为是其他字符</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            other++; <span class="comment">// 其他字符计数加一</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>C语言程序设计</category>
+      </categories>
+      <tags>
+        <tag>C语言程序设计期末复习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第6章 利用数组处理批量数据</title>
     <url>/posts/9980/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><strong>数组：同一类性质的数据</strong></p>
@@ -2567,77 +2715,54 @@
       </tags>
   </entry>
   <entry>
-    <title>第5章 循环结构程序设计</title>
-    <url>/posts/25879/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="5-3-用-do-while-语句实现循环"><a href="#5-3-用-do-while-语句实现循环" class="headerlink" title="5.3 用 do-while 语句实现循环"></a>5.3 用 do-while 语句实现循环</h1><p><code>注意</code>: <strong>do-while 语句的特点是，先无条件地执行循环体，然后判断循环条件是否成立。如果成立，则继续执行循环体，否则终止循环</strong>。</p>
-<p><code>举例</code>:</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">1</span>;             <span class="comment">//设变量i的初值为1</span></span><br><span class="line"><span class="keyword">do</span>                     <span class="comment">//循环结构开始</span></span><br><span class="line">  &#123;</span><br><span class="line">     <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,i++); <span class="comment">//循环体，输出i的值，并自增1</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">while</span> (i &lt;= <span class="number">100</span>);      <span class="comment">//当i &lt;= 100时，循环继续，否则终止循环。</span></span><br></pre></td></tr></table></figure>
-<p><strong>do-while 语句的一般形式如下</strong>：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span></span><br><span class="line">  语句</span><br><span class="line"><span class="keyword">while</span> (表达式)；</span><br></pre></td></tr></table></figure>
-<p><code>N-S图表示</code>:</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/25879/image.png" alt="N-S表示do-while语句"></p>
-<p>先执行一次指定的循环ynb语句，然后判别表达式，当表达式的值为非零(“真”)时，返回重新执行语句，如此反复，直到表达式的值为零(“假”)时，循环终止。</p>
-<p>【例5.3】 while 和 do-while 循环的比较</p>
-<p>(1) 用 while 循环:</p>
-<h1 id="5-7-改变循环执行的状态"><a href="#5-7-改变循环执行的状态" class="headerlink" title="5.7 改变循环执行的状态"></a>5.7 改变循环执行的状态</h1>]]></content>
+    <title>第8章习题-15</title>
+    <url>/posts/39958/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success flat"><p>C语言程序设计课后习题解析大总结</p>
+</div>
+<blockquote>
+<p><strong>正文开始</strong></p>
+<p><strong>题目描述：</strong></p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/39958/image.png" alt="alt text"></p>
+<h1 id="解题思想："><a href="#解题思想：" class="headerlink" title="解题思想："></a>解题思想：</h1><p><strong>4个学生5门课程:其实就是一个4x5的矩阵，每一行代表一个学生的5门成绩，float arr[4][5]就可以表示这个矩阵。</strong></p>
+<blockquote>
+<p><strong>第1小题</strong></p>
+</blockquote>
+<p><strong>1. 求第1门课程的平均分:其实就是每个学生的第0门(通过下标进行访问)成绩总和除以4</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(arr[<span class="number">0</span>][<span class="number">0</span>]+arr[<span class="number">1</span>][<span class="number">0</span>]+arr[<span class="number">2</span>][<span class="number">0</span>]+arr[<span class="number">3</span>][<span class="number">0</span>])/<span class="number">4</span> <span class="comment">//结果要求为float类型（双精度浮点数），例如：85.5</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>第2小题</strong></p>
+</blockquote>
+<p><strong>2. 2门课程不及格的同学，输出学号以及全部成绩，以及平均成绩</strong></p>
+<ol>
+<li><p>遍历每个学生的每门成绩，统计小于60分的课程数量，大于2则符合要求</p>
+</li>
+<li><p>输出学号（第n行的下标）</p>
+</li>
+<li><p>输出所有成绩（编写一个成绩输出函数）</p>
+</li>
+<li><p>输出平均成绩（编写一个计算平均成绩的函数，传递一行数据（子数组的地址）），进行总和相加除以5，保留两位小数</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>第3小题</strong></p>
+</blockquote>
+<p><strong>3. 平均成绩90分以上，或者全部成绩在85分以上，输出优秀学生学号</strong></p>
+<ol>
+<li>遍历每个学生的成绩的同时，计算学生的平均成绩，计算成绩在85分以上的课程数量，平均成绩&gt;90 ||(或) course_count ==5（假设每门课程成绩&gt;85分）</li>
+</ol>
+<h1 id="代码呈现："><a href="#代码呈现：" class="headerlink" title="代码呈现："></a>代码呈现：</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于统计指定课程的成绩平均值</span></span><br><span class="line"><span class="comment">// 参数: </span></span><br><span class="line"><span class="comment">//   arr - 学生成绩二维数组的指针</span></span><br><span class="line"><span class="comment">//   row - 行数（学生数量）</span></span><br><span class="line"><span class="comment">//   col - 列数（课程数量）</span></span><br><span class="line"><span class="comment">//   course_id - 需要计算平均分的课程编号</span></span><br><span class="line"><span class="comment">// 返回值:</span></span><br><span class="line"><span class="comment">//   指定课程的平均成绩</span></span><br><span class="line"><span class="type">float</span> <span class="title function_">course_avg</span><span class="params">(<span class="type">float</span> (*arr)[<span class="number">5</span>], <span class="type">int</span> row, <span class="type">int</span> col, <span class="type">int</span> course_id)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">float</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 遍历所有学生在指定课程的成绩并累加</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; row; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        sum += *(*(arr + i) + course_id); <span class="comment">// arr[i][course_id]</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 计算平均分并返回</span></span><br><span class="line">    <span class="keyword">return</span> (sum / row);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于计算给定数组的平均值</span></span><br><span class="line"><span class="comment">// 参数:</span></span><br><span class="line"><span class="comment">//   score - 成绩数组的指针</span></span><br><span class="line"><span class="comment">//   sz - 数组元素个数</span></span><br><span class="line"><span class="comment">// 返回值:</span></span><br><span class="line"><span class="comment">//   数组元素的平均值</span></span><br><span class="line"><span class="type">float</span> <span class="title function_">stu_avg</span><span class="params">(<span class="type">float</span> *score, <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">float</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 遍历数组累加所有成绩</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        sum += *(score + i); <span class="comment">// 相当于 score[i]</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 计算平均值并返回</span></span><br><span class="line">    <span class="keyword">return</span> (sum / sz);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于打印学生的所有成绩</span></span><br><span class="line"><span class="comment">// 参数:</span></span><br><span class="line"><span class="comment">//   score - 指向学生单行成绩数组的指针</span></span><br><span class="line"><span class="comment">//   sz - 该学生成绩的数量（本例中为5，代表5门课程）</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">print_stu_score</span><span class="params">(<span class="type">float</span> *score, <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;此学生的所有成绩如下：&quot;</span>);</span><br><span class="line">    <span class="comment">// 打印每个成绩，保留两位小数</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%.2f &quot;</span>, *(score + i)); <span class="comment">// 相当于 score[i]</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于输出不及格学生的信息</span></span><br><span class="line"><span class="comment">// 参数:</span></span><br><span class="line"><span class="comment">//   arr - 学生成绩二维数组的指针</span></span><br><span class="line"><span class="comment">//   row - 学生数量</span></span><br><span class="line"><span class="comment">//   col - 课程数量</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">fail</span><span class="params">(<span class="type">float</span> (*arr)[<span class="number">5</span>], <span class="type">int</span> row, <span class="type">int</span> col)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; row; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> fail_count = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 统计不及格课程数量</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; col; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (*(*(arr + i) + j) &lt; <span class="number">60</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                fail_count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 如果不及格课程超过2门，则打印该学生信息</span></span><br><span class="line">        <span class="keyword">if</span> (fail_count &gt; <span class="number">2</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d 号学生，有两门以上课程不及格\n&quot;</span>, i);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;这个学生的平均成绩是：%f\n&quot;</span>, stu_avg(*(arr + i), col)); <span class="comment">// 计算并打印该生平均成绩</span></span><br><span class="line">            print_stu_score(*(arr + i), col); <span class="comment">// 打印该生所有成绩</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于输出优秀学生的信息</span></span><br><span class="line"><span class="comment">// 参数:</span></span><br><span class="line"><span class="comment">//   arr - 学生成绩二维数组的指针</span></span><br><span class="line"><span class="comment">//   row - 学生数量</span></span><br><span class="line"><span class="comment">//   col - 课程数量</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">excellent</span><span class="params">(<span class="type">float</span> (*arr)[<span class="number">5</span>], <span class="type">int</span> row, <span class="type">int</span> col)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; row; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> course_count = <span class="number">0</span>;</span><br><span class="line">        <span class="type">float</span> num = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 统计90分以上课程数量及总成绩</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; col; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (*(*(arr + i) + j) &gt; <span class="number">85</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                course_count++;</span><br><span class="line">            &#125;</span><br><span class="line">            num += arr[i][j]; <span class="comment">// 累加成绩</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 如果所有课程均高于90分或至少一门课程高于85分，认为是优秀学生</span></span><br><span class="line">        <span class="keyword">if</span> (num / col &gt; <span class="number">90</span> || course_count == col)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d 号学生，真是好学生！\n&quot;</span>, i);</span><br><span class="line">            print_stu_score(*(arr + i), col); <span class="comment">// 打印该生所有成绩</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 初始化一个4x5的学生成绩数组</span></span><br><span class="line">    <span class="type">float</span> score[<span class="number">4</span>][<span class="number">5</span>] = &#123;</span><br><span class="line">        &#123;<span class="number">32</span>, <span class="number">48</span>, <span class="number">58</span>, <span class="number">36</span>, <span class="number">75</span>&#125;,</span><br><span class="line">        &#123;<span class="number">98</span>, <span class="number">70</span>, <span class="number">99</span>, <span class="number">100</span>, <span class="number">90</span>&#125;,</span><br><span class="line">        &#123;<span class="number">87</span>, <span class="number">88</span>, <span class="number">89</span>, <span class="number">86</span>, <span class="number">87</span>&#125;,</span><br><span class="line">        &#123;<span class="number">68</span>, <span class="number">98</span>, <span class="number">75</span>, <span class="number">78</span>, <span class="number">82</span>&#125;,</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">// 计算并输出第1门课程的平均分</span></span><br><span class="line">    <span class="type">float</span> cour_avg_score = course_avg(score, <span class="number">4</span>, <span class="number">5</span>, <span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;第1门课程的平均分：%.2f\n&quot;</span>, cour_avg_score);</span><br><span class="line">    <span class="comment">// 输出不及格学生的信息</span></span><br><span class="line">    fail(score, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">    <span class="comment">// 输出优秀学生的信息</span></span><br><span class="line">    excellent(score, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>运行结果如下：</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/39958/image-1.png" alt="alt text"></p>
+<blockquote>
+<p><strong>完</strong></p>
+</blockquote>
+]]></content>
       <categories>
         <category>C语言程序设计</category>
       </categories>
       <tags>
-        <tag>C语言程序设计期末复习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第7章 用函数实现模块化程序设计</title>
-    <url>/posts/18010/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="函数的定义"><a href="#函数的定义" class="headerlink" title="函数的定义"></a>函数的定义</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>函数名: <code>add</code></p>
-</li>
-<li><p>参数: <code>a</code> 和 <code>b</code></p>
-</li>
-<li><p>返回值: <code>int</code></p>
-</li>
-<li><p>函数体: <code>return a + b;</code></p>
-</li>
-</ol>
-<h1 id="函数的调用"><a href="#函数的调用" class="headerlink" title="函数的调用"></a>函数的调用</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">10</span>, y = <span class="number">20</span>;</span><br><span class="line">    <span class="type">int</span> z = add(x, y);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;The sum is: %d&quot;</span>, z);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>函数名: <code>main</code></p>
-</li>
-<li><p>参数: 无</p>
-</li>
-<li><p>返回值: <code>int</code></p>
-</li>
-<li><p>函数体: 调用 <code>add</code> 函数并将 <code>x</code> 和 <code>y</code> 作为参数，将结果赋值给 <code>z</code>，然后输出 <code>z</code> 的值。</p>
-</li>
-</ol>
-<h1 id="数组作为函数参数"><a href="#数组作为函数参数" class="headerlink" title="数组作为函数参数"></a>数组作为函数参数</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">printArray</span><span class="params">(<span class="type">int</span> arr[], <span class="type">int</span> size)</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; size; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;;</span><br><span class="line">    <span class="type">int</span> size = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[<span class="number">0</span>]);</span><br><span class="line">    printArray(arr, size);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>函数名: <code>printArray</code></p>
-</li>
-<li><p>参数: <code>arr</code> 和 <code>size</code></p>
-</li>
-<li><p>返回值: <code>void</code></p>
-</li>
-<li><p>函数体: 打印数组 <code>arr</code> 中的元素。</p>
-</li>
-</ol>
-<h1 id="全局变量和局部变量的比较"><a href="#全局变量和局部变量的比较" class="headerlink" title="全局变量和局部变量的比较"></a>全局变量和局部变量的比较</h1><p><code>从两方面分析两者的差异</code>:</p>
-<ol>
-<li><p>作用域: 全局变量的作用域是整个程序，而局部变量的作用域是函数内部。</p>
-</li>
-<li><p>生命周期: 全局变量的生命周期是整个程序的运行期间，而局部变量的生命周期则是函数的执行期间。</p>
-</li>
-</ol>
-<h1 id="课后习题第9题"><a href="#课后习题第9题" class="headerlink" title="课后习题第9题"></a>课后习题第9题</h1><p><strong><code>编写一个函数，由实参传来一个字符串，统计此字符串中字母，数字，空格和其他字符的个数，在主函数中输入字符串以及输出上述的结果</code></strong>。</p>
-<p>代码呈现：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 禁用安全警告，允许使用不安全的字符串函数</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>  _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span> <span class="comment">// 包含标准输入输出库</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 全局变量，分别记录数字、空格、字母、其他字符的个数</span></span><br><span class="line"><span class="type">int</span> letter, digit, space, other;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 主函数</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 声明count函数，该函数将用于统计字符串中各类字符的数量</span></span><br><span class="line">    <span class="type">void</span> <span class="title function_">count</span><span class="params">(<span class="type">char</span>[])</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 定义一个字符数组text，大小为80，用于存储用户输入的字符串</span></span><br><span class="line">    <span class="type">char</span> text[<span class="number">80</span>];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 提示用户输入一个字符串</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入一个字符串：\n&quot;</span>);</span><br><span class="line">    <span class="comment">// 使用gets函数读取用户输入的字符串（注意：gets函数存在安全隐患，推荐使用fgets代替）</span></span><br><span class="line">    gets(text);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出用户输入的字符串</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;string:\n&quot;</span>);</span><br><span class="line">    <span class="built_in">puts</span>(text);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 初始化各类字符计数器</span></span><br><span class="line">    letter = <span class="number">0</span>;</span><br><span class="line">    digit = <span class="number">0</span>;</span><br><span class="line">    space = <span class="number">0</span>;</span><br><span class="line">    other = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 调用count函数，传入用户输入的字符串，进行字符类型统计</span></span><br><span class="line">    count(text);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出统计结果</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;该字符串中有，数字：%d个，空格%d个，字母%d个，其他字符%d个&quot;</span>, digit, space, letter, other);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">// 程序正常结束</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// count函数，用于统计字符串中各类字符的数量</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">count</span><span class="params">(<span class="type">char</span> str[])</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="comment">// 遍历字符串中的每一个字符，直到遇到字符串结束标志&#x27;\0&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; str[i] != <span class="string">&#x27;\0&#x27;</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 判断当前字符是否为数字（ASCII码在&#x27;0&#x27;到&#x27;9&#x27;之间）</span></span><br><span class="line">        <span class="keyword">if</span> (str[i] &gt;= <span class="string">&#x27;0&#x27;</span> &amp;&amp; str[i] &lt;= <span class="string">&#x27;9&#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            digit++; <span class="comment">// 数字计数加一</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 判断当前字符是否为空格</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (str[i] == <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            space++; <span class="comment">// 空格计数加一</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 判断当前字符是否为字母（小写字母&#x27;a&#x27;到&#x27;z&#x27;或大写字母&#x27;A&#x27;到&#x27;Z&#x27;）</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> ((str[i] &gt;= <span class="string">&#x27;a&#x27;</span> &amp;&amp; str[i] &lt;= <span class="string">&#x27;z&#x27;</span>) || (str[i] &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; str[i] &lt;= <span class="string">&#x27;Z&#x27;</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            letter++; <span class="comment">// 字母计数加一</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 如果上述条件都不满足，则认为是其他字符</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            other++; <span class="comment">// 其他字符计数加一</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>C语言程序设计</category>
-      </categories>
-      <tags>
-        <tag>C语言程序设计期末复习笔记</tag>
+        <tag>C语言程序设计课后习题（谭浩强C语言程序设计第五版课后答案详细讲解）</tag>
       </tags>
   </entry>
   <entry>
@@ -2776,57 +2901,6 @@
 <p><strong>画图理解:</strong></p>
 <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/6117/image-2.png" alt="alt text"></p>
 <p><strong>代码如下:</strong><br><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS <span class="comment">//宏定义，防止VS出现不安全的警告</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span> <span class="comment">//标准输入输出库</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> num1, num2, num3; <span class="comment">//定义三个整数</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;请输入三个整数：&quot;</span>); <span class="comment">//提示输入</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d %d&quot;</span>, &amp;num1, &amp;num2, &amp;num3); <span class="comment">//输入三个整数</span></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> *pmin = &amp;num1; </span><br><span class="line">    <span class="type">int</span> *pmid = &amp;num2; </span><br><span class="line">    <span class="type">int</span> *pmax = &amp;num3; <span class="comment">//定义三个指针变量</span></span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span> (*pmin &gt; *pmid) <span class="comment">//指针解引用，*pmin与*pmid指向交换，也就是地址的交换，所以这里比较的是值</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> *temp = pmin; <span class="comment">//定义一个中间指针变量temp，用于临时存储*pmin的地址</span></span><br><span class="line">        pmin = pmid;</span><br><span class="line">        pmid = temp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (*pmin &gt; *pmax) <span class="comment">//指针解引用，*pmin与*pmax指向交换，也就是地址的交换，所以这里比较的是值</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> *temp = pmin; <span class="comment">//定义一个中间指针变量temp，用于临时存储pmin的地址</span></span><br><span class="line">        pmin = pmax;</span><br><span class="line">        pmax = temp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (*pmid &gt; *pmax) <span class="comment">//指针解引用，*pmid与*pmax指向交换，也就是地址的交换，所以这里比较的是值</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> *temp = pmid; <span class="comment">//定义一个中间指针变量temp，用于临时存储pmid的地址</span></span><br><span class="line">        pmid = pmax;</span><br><span class="line">        pmax = temp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;三个整数的排序结果为：%d %d %d&quot;</span>, *pmin, *pmid, *pmax); <span class="comment">//输出三个整数的排序结果</span></span><br><span class="line">    <span class="comment">//system(&quot;pause&quot;); //暂停程序，等待用户输入(可要可不要，可以把它注释掉)，低版本编译器可能会出现一闪而过的黑框，使用这个解决。</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><strong>运行结果如下：</strong><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/6117/image-4.png" alt="alt text"></p>
-<blockquote>
-<p><strong>完</strong></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>C语言程序设计</category>
-      </categories>
-      <tags>
-        <tag>C语言程序设计课后习题（谭浩强C语言程序设计第五版课后答案详细讲解）</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第8章习题-15</title>
-    <url>/posts/39958/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success flat"><p>C语言程序设计课后习题解析大总结</p>
-</div>
-<blockquote>
-<p><strong>正文开始</strong></p>
-<p><strong>题目描述：</strong></p>
-</blockquote>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/39958/image.png" alt="alt text"></p>
-<h1 id="解题思想："><a href="#解题思想：" class="headerlink" title="解题思想："></a>解题思想：</h1><p><strong>4个学生5门课程:其实就是一个4x5的矩阵，每一行代表一个学生的5门成绩，float arr[4][5]就可以表示这个矩阵。</strong></p>
-<blockquote>
-<p><strong>第1小题</strong></p>
-</blockquote>
-<p><strong>1. 求第1门课程的平均分:其实就是每个学生的第0门(通过下标进行访问)成绩总和除以4</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(arr[<span class="number">0</span>][<span class="number">0</span>]+arr[<span class="number">1</span>][<span class="number">0</span>]+arr[<span class="number">2</span>][<span class="number">0</span>]+arr[<span class="number">3</span>][<span class="number">0</span>])/<span class="number">4</span> <span class="comment">//结果要求为float类型（双精度浮点数），例如：85.5</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>第2小题</strong></p>
-</blockquote>
-<p><strong>2. 2门课程不及格的同学，输出学号以及全部成绩，以及平均成绩</strong></p>
-<ol>
-<li><p>遍历每个学生的每门成绩，统计小于60分的课程数量，大于2则符合要求</p>
-</li>
-<li><p>输出学号（第n行的下标）</p>
-</li>
-<li><p>输出所有成绩（编写一个成绩输出函数）</p>
-</li>
-<li><p>输出平均成绩（编写一个计算平均成绩的函数，传递一行数据（子数组的地址）），进行总和相加除以5，保留两位小数</p>
-</li>
-</ol>
-<blockquote>
-<p><strong>第3小题</strong></p>
-</blockquote>
-<p><strong>3. 平均成绩90分以上，或者全部成绩在85分以上，输出优秀学生学号</strong></p>
-<ol>
-<li>遍历每个学生的成绩的同时，计算学生的平均成绩，计算成绩在85分以上的课程数量，平均成绩&gt;90 ||(或) course_count ==5（假设每门课程成绩&gt;85分）</li>
-</ol>
-<h1 id="代码呈现："><a href="#代码呈现：" class="headerlink" title="代码呈现："></a>代码呈现：</h1><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于统计指定课程的成绩平均值</span></span><br><span class="line"><span class="comment">// 参数: </span></span><br><span class="line"><span class="comment">//   arr - 学生成绩二维数组的指针</span></span><br><span class="line"><span class="comment">//   row - 行数（学生数量）</span></span><br><span class="line"><span class="comment">//   col - 列数（课程数量）</span></span><br><span class="line"><span class="comment">//   course_id - 需要计算平均分的课程编号</span></span><br><span class="line"><span class="comment">// 返回值:</span></span><br><span class="line"><span class="comment">//   指定课程的平均成绩</span></span><br><span class="line"><span class="type">float</span> <span class="title function_">course_avg</span><span class="params">(<span class="type">float</span> (*arr)[<span class="number">5</span>], <span class="type">int</span> row, <span class="type">int</span> col, <span class="type">int</span> course_id)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">float</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 遍历所有学生在指定课程的成绩并累加</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; row; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        sum += *(*(arr + i) + course_id); <span class="comment">// arr[i][course_id]</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 计算平均分并返回</span></span><br><span class="line">    <span class="keyword">return</span> (sum / row);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于计算给定数组的平均值</span></span><br><span class="line"><span class="comment">// 参数:</span></span><br><span class="line"><span class="comment">//   score - 成绩数组的指针</span></span><br><span class="line"><span class="comment">//   sz - 数组元素个数</span></span><br><span class="line"><span class="comment">// 返回值:</span></span><br><span class="line"><span class="comment">//   数组元素的平均值</span></span><br><span class="line"><span class="type">float</span> <span class="title function_">stu_avg</span><span class="params">(<span class="type">float</span> *score, <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">float</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 遍历数组累加所有成绩</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        sum += *(score + i); <span class="comment">// 相当于 score[i]</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 计算平均值并返回</span></span><br><span class="line">    <span class="keyword">return</span> (sum / sz);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于打印学生的所有成绩</span></span><br><span class="line"><span class="comment">// 参数:</span></span><br><span class="line"><span class="comment">//   score - 指向学生单行成绩数组的指针</span></span><br><span class="line"><span class="comment">//   sz - 该学生成绩的数量（本例中为5，代表5门课程）</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">print_stu_score</span><span class="params">(<span class="type">float</span> *score, <span class="type">int</span> sz)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;此学生的所有成绩如下：&quot;</span>);</span><br><span class="line">    <span class="comment">// 打印每个成绩，保留两位小数</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; sz; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%.2f &quot;</span>, *(score + i)); <span class="comment">// 相当于 score[i]</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于输出不及格学生的信息</span></span><br><span class="line"><span class="comment">// 参数:</span></span><br><span class="line"><span class="comment">//   arr - 学生成绩二维数组的指针</span></span><br><span class="line"><span class="comment">//   row - 学生数量</span></span><br><span class="line"><span class="comment">//   col - 课程数量</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">fail</span><span class="params">(<span class="type">float</span> (*arr)[<span class="number">5</span>], <span class="type">int</span> row, <span class="type">int</span> col)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; row; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> fail_count = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 统计不及格课程数量</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; col; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (*(*(arr + i) + j) &lt; <span class="number">60</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                fail_count++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 如果不及格课程超过2门，则打印该学生信息</span></span><br><span class="line">        <span class="keyword">if</span> (fail_count &gt; <span class="number">2</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d 号学生，有两门以上课程不及格\n&quot;</span>, i);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;这个学生的平均成绩是：%f\n&quot;</span>, stu_avg(*(arr + i), col)); <span class="comment">// 计算并打印该生平均成绩</span></span><br><span class="line">            print_stu_score(*(arr + i), col); <span class="comment">// 打印该生所有成绩</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数用于输出优秀学生的信息</span></span><br><span class="line"><span class="comment">// 参数:</span></span><br><span class="line"><span class="comment">//   arr - 学生成绩二维数组的指针</span></span><br><span class="line"><span class="comment">//   row - 学生数量</span></span><br><span class="line"><span class="comment">//   col - 课程数量</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">excellent</span><span class="params">(<span class="type">float</span> (*arr)[<span class="number">5</span>], <span class="type">int</span> row, <span class="type">int</span> col)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; row; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> course_count = <span class="number">0</span>;</span><br><span class="line">        <span class="type">float</span> num = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 统计90分以上课程数量及总成绩</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; col; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (*(*(arr + i) + j) &gt; <span class="number">85</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                course_count++;</span><br><span class="line">            &#125;</span><br><span class="line">            num += arr[i][j]; <span class="comment">// 累加成绩</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 如果所有课程均高于90分或至少一门课程高于85分，认为是优秀学生</span></span><br><span class="line">        <span class="keyword">if</span> (num / col &gt; <span class="number">90</span> || course_count == col)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d 号学生，真是好学生！\n&quot;</span>, i);</span><br><span class="line">            print_stu_score(*(arr + i), col); <span class="comment">// 打印该生所有成绩</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 初始化一个4x5的学生成绩数组</span></span><br><span class="line">    <span class="type">float</span> score[<span class="number">4</span>][<span class="number">5</span>] = &#123;</span><br><span class="line">        &#123;<span class="number">32</span>, <span class="number">48</span>, <span class="number">58</span>, <span class="number">36</span>, <span class="number">75</span>&#125;,</span><br><span class="line">        &#123;<span class="number">98</span>, <span class="number">70</span>, <span class="number">99</span>, <span class="number">100</span>, <span class="number">90</span>&#125;,</span><br><span class="line">        &#123;<span class="number">87</span>, <span class="number">88</span>, <span class="number">89</span>, <span class="number">86</span>, <span class="number">87</span>&#125;,</span><br><span class="line">        &#123;<span class="number">68</span>, <span class="number">98</span>, <span class="number">75</span>, <span class="number">78</span>, <span class="number">82</span>&#125;,</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">// 计算并输出第1门课程的平均分</span></span><br><span class="line">    <span class="type">float</span> cour_avg_score = course_avg(score, <span class="number">4</span>, <span class="number">5</span>, <span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;第1门课程的平均分：%.2f\n&quot;</span>, cour_avg_score);</span><br><span class="line">    <span class="comment">// 输出不及格学生的信息</span></span><br><span class="line">    fail(score, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">    <span class="comment">// 输出优秀学生的信息</span></span><br><span class="line">    excellent(score, <span class="number">4</span>, <span class="number">5</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>运行结果如下：</strong></p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/posts/39958/image-1.png" alt="alt text"></p>
 <blockquote>
 <p><strong>完</strong></p>
 </blockquote>
