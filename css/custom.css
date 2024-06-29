@@ -630,3 +630,21 @@ hr {
 #aside-content .avatar-img :hover {
     transform: none;
 }
+
+/* 增加页脚底部外边距，避免内容重叠 */
+#footer {
+    margin-bottom: 30px;
+    /* 根据需要调整数值 */
+}
+
+/* 或者调整页脚的固定定位问题 */
+#footer.fixed-footer {
+    position: static;
+    /* 如果页脚是固定定位导致的问题，尝试改为静态定位 */
+}
+
+/* 确保页脚在所有内容之后 */
+.content-wrap {
+    margin-bottom: XXpx;
+    /* XX替换为至少与页脚高度相同的值 */
+}
